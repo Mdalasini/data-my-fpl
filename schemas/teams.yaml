@@ -1,0 +1,13 @@
+columns:
+  - name: code
+    type: integer
+    description: The unique code of the team
+  - name: id
+    type: integer
+    description: The unique identifier of the team. Season specific
+  - name: name
+    type: string
+    description: The full name of the team.
+  - name: short_name
+    type: string
+    description: The short name of the team.
