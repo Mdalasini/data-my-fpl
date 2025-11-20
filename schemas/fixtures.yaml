@@ -19,7 +19,9 @@ columns:
     description: The time the fixture is scheduled to start.
   - name: team_h_xg
     type: float
+    nullable: true
     description: The expected goals for the home team.
   - name: team_a_xg
     type: float
+    nullable: true
     description: The expected goals for the away team.
