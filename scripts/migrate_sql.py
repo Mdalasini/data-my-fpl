@@ -8,6 +8,8 @@ fixture_path = data_dir_path / "fixtures.csv"
 teams_path = data_dir_path / "teams.csv"
 team_elos_path = data_dir_path / "team_elos.csv"
 elo_changes_path = data_dir_path / "elo_changes.csv"
+players_path = data_dir_path / "players.csv"
+player_stats_path = data_dir_path / "player_stats.csv"
 sql_path = data_dir_path / "my-fpl.db"
 
 
@@ -61,6 +63,48 @@ def create_tables(conn):
             PRIMARY KEY(fixture_code, team_id),
             FOREIGN KEY(fixture_code) REFERENCES fixtures(code),
             FOREIGN KEY(team_id) REFERENCES teams(id)
+        )
+    """)
+
+    # Create players table
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS players (
+            code INTEGER UNIQUE,
+            id INTEGER PRIMARY KEY,
+            first_name TEXT,
+            second_name TEXT,
+            web_name TEXT NOT NULL,
+            element_type INTEGER NOT NULL,
+            selected_by_percent REAL,
+            team INTEGER NOT NULL,
+            team_code INTEGER,
+            status TEXT,
+            news TEXT,
+            now_cost INTEGER NOT NULL,
+            FOREIGN KEY(team) REFERENCES teams(id)
+        )
+    """)
+
+    # Create player_stats table
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS player_stats (
+            bps INTEGER,
+            defensive_contribution INTEGER,
+            element INTEGER NOT NULL,
+            expected_assists INTEGER,
+            expected_goals INTEGER,
+            expected_goals_conceded INTEGER,
+            fixture INTEGER NOT NULL,
+            minutes INTEGER,
+            opponent_team INTEGER,
+            round INTEGER NOT NULL,
+            starts INTEGER,
+            total_points INTEGER,
+            ict_index REAL,
+            PRIMARY KEY(element, fixture),
+            FOREIGN KEY(element) REFERENCES players(id),
+            FOREIGN KEY(fixture) REFERENCES fixtures(code),
+            FOREIGN KEY(opponent_team) REFERENCES teams(id)
         )
     """)
 
@@ -148,6 +192,98 @@ def migrate_elo_changes(conn, csv_file):
     conn.commit()
 
 
+def migrate_players(conn, csv_file):
+    """Migrate players data from CSV to database."""
+    cursor = conn.cursor()
+    with open(csv_file, "r") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            selected_by_percent = (
+                float(row["selected_by_percent"])
+                if row.get("selected_by_percent")
+                else None
+            )
+            team_code = int(row["team_code"]) if row.get("team_code") else None
+
+            cursor.execute(
+                """
+                INSERT INTO players (code, id, first_name, second_name, web_name, element_type, selected_by_percent, team, team_code, status, news, now_cost)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+                (
+                    int(row["code"]) if row.get("code") else None,
+                    int(row["id"]),
+                    row.get("first_name"),
+                    row.get("second_name"),
+                    row["web_name"],
+                    int(row["element_type"]),
+                    selected_by_percent,
+                    int(row["team"]),
+                    team_code,
+                    row.get("status"),
+                    row.get("news"),
+                    float(row["now_cost"]),
+                ),
+            )
+    conn.commit()
+
+
+def migrate_player_stats(conn, csv_file):
+    """Migrate player stats data from CSV to database."""
+    cursor = conn.cursor()
+    with open(csv_file, "r") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            # Handle optional integer fields
+            bps = int(row["bps"]) if row.get("bps") else None
+            defensive_contribution = (
+                int(row["defensive_contribution"])
+                if row.get("defensive_contribution")
+                else None
+            )
+            expected_assists = (
+                float(row["expected_assists"]) if row.get("expected_assists") else None
+            )
+            expected_goals = (
+                float(row["expected_goals"]) if row.get("expected_goals") else None
+            )
+            expected_goals_conceded = (
+                float(row["expected_goals_conceded"])
+                if row.get("expected_goals_conceded")
+                else None
+            )
+            minutes = int(row["minutes"]) if row.get("minutes") else None
+            opponent_team = (
+                int(row["opponent_team"]) if row.get("opponent_team") else None
+            )
+            starts = int(row["starts"]) if row.get("starts") else None
+            total_points = int(row["total_points"]) if row.get("total_points") else None
+            ict_index = float(row["ict_index"]) if row.get("ict_index") else None
+
+            cursor.execute(
+                """
+                INSERT INTO player_stats (bps, defensive_contribution, element, expected_assists, expected_goals, expected_goals_conceded, fixture, minutes, opponent_team, round, starts, total_points, ict_index)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+                (
+                    bps,
+                    defensive_contribution,
+                    int(row["element"]),
+                    expected_assists,
+                    expected_goals,
+                    expected_goals_conceded,
+                    int(row["fixture"]),
+                    minutes,
+                    opponent_team,
+                    int(row["round"]),
+                    starts,
+                    total_points,
+                    ict_index,
+                ),
+            )
+    conn.commit()
+
+
 def main():
     """Main migration function."""
     # Delete existing database if it exists to ensure fresh migration
@@ -173,6 +309,12 @@ def main():
 
         print("Migrating elo changes...")
         migrate_elo_changes(conn, elo_changes_path)
+
+        print("Migrating players...")
+        migrate_players(conn, players_path)
+
+        print("Migrating player stats...")
+        migrate_player_stats(conn, player_stats_path)
 
         print("Migration completed successfully!")
     finally:
