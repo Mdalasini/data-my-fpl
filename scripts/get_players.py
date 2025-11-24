@@ -23,6 +23,7 @@ def main():
             "first_name",
             "second_name",
             "web_name",
+            "element_type",
             "selected_by_percent",
             "team",
             "team_code",

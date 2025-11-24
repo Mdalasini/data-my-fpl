@@ -14,6 +14,9 @@ columns:
   - name: web_name
     type: string
     description: The player's web name.
+  - name: element_type
+    type: enum [1 - goalkeepers, 2 - defenders, 3 - midfielders, 4 - forwards]
+    description: The player's position.
   - name: selected_by_percent
     type: float
     description: Percentage of players who have selected this player in their fantasy teams.
