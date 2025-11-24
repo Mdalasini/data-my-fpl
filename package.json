@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "@libsql/client": "^0.15.15"
+    "@libsql/client": "^0.15.15",
+    "better-sqlite3": "^12.4.6",
+    "csv-parse": "^6.1.0"
   }
 }
