@@ -103,7 +103,7 @@ def create_tables(conn):
             ict_index REAL,
             PRIMARY KEY(element, fixture),
             FOREIGN KEY(element) REFERENCES players(id),
-            FOREIGN KEY(fixture) REFERENCES fixtures(code),
+            FOREIGN KEY(fixture) REFERENCES fixtures(id),
             FOREIGN KEY(opponent_team) REFERENCES teams(id)
         )
     """)
