@@ -1,0 +1,747 @@
+code,id,first_name,second_name,web_name,selected_by_percent,team,team_code,status,news
+154561,1,David,Raya Martín,Raya,30.4,1,3,a,
+109745,2,Kepa,Arrizabalaga Revuelta,Arrizabalaga,0.5,1,3,a,
+463748,3,Karl,Hein,Hein,0.3,1,3,u,Has joined Werder Bremen on loan for the rest of the season.
+551221,4,Tommy,Setford,Setford,0.2,1,3,a,
+226597,5,Gabriel,dos Santos Magalhães,Gabriel,38.4,1,3,a,
+462424,6,William,Saliba,Saliba,11.9,1,3,d,Knock - 75% chance of playing
+466075,7,Riccardo,Calafiori,Calafiori,15.8,1,3,a,
+445122,8,Jurriën,Timber,J.Timber,24.5,1,3,a,
+440854,9,Jakub,Kiwior,Kiwior,0.1,1,3,u,has joined Porto on loan for the rest of the season.
+499169,10,Myles,Lewis-Skelly,Lewis-Skelly,1.7,1,3,a,
+198869,11,Benjamin,White,White,0.4,1,3,a,
+563324,13,Brayden,Clarke,Clarke,0.5,1,3,a,
+588793,14,Maldini,Kacurri,Kacurri,0.1,1,3,u,has joined Morecambe on loan for the rest of the season.
+499167,15,Josh,Nichols,Nichols,0.2,1,3,a,
+223340,16,Bukayo,Saka,Saka,17.2,1,3,a,
+184029,17,Martin,Ødegaard,Ødegaard,1.4,1,3,i,Knee injury - Expected back 23 Nov
+248857,18,Noni,Madueke,Madueke,0.6,1,3,i,Knee injury - Expected back 23 Nov
+444145,19,Gabriel,Martinelli Silva,Martinelli,1.1,1,3,d,Knock - 25% chance of playing
+116216,20,Leandro,Trossard,Trossard,0.5,1,3,a,
+204480,21,Declan,Rice,Rice,14.2,1,3,a,
+195384,22,Mikel,Merino Zazón,Merino,0.6,1,3,a,
+438098,23,Fábio,Ferreira Vieira,Fábio Vieira,0.0,1,3,u,has joined Hamburger on loan for the rest of the season.
+128295,24,Christian,Nørgaard,Nørgaard,0.1,1,3,a,
+499175,25,Ethan,Nwaneri,Nwaneri,0.1,1,3,a,
+481655,26,Martín,Zubimendi Ibáñez,Zubimendi,3.8,1,3,a,
+588796,28,Ismeal,Kabia,Kabia,0.1,1,3,u,has joined Shrewsbury Town on loan for the rest of the season.
+437742,29,Albert,Sambi Lokonga,Sambi,0.1,1,3,u,has joined Hamburger permanently.
+219847,30,Kai,Havertz,Havertz,0.3,1,3,i,Knee injury - Expected back 23 Nov
+205651,31,Gabriel,Fernando de Jesus,G.Jesus,0.0,1,3,i,Knee injury - Expected back 30 Dec
+232413,266,Eberechi,Eze,Eze,14.1,1,3,a,
+500040,662,Cristhian,Mosquera,Mosquera,0.2,1,3,a,
+224117,666,Viktor,Gyökeres,Gyökeres,21.6,1,3,a,
+616077,700,Max,Dowman,Dowman,0.3,1,3,a,
+646243,711,Andre,Harriman-Annous,Harriman-Annous,0.0,1,3,a,
+448104,725,Piero,Hincapié,Hincapie,0.0,1,3,a,
+98980,32,Emiliano,Martínez Romero,Martinez,2.0,2,7,a,
+72147,33,Marco,Bizot,M.Bizot,0.5,2,7,a,
+462492,34,Joe,Gauci,Gauci,0.1,2,7,u,Has joined Port Vale on loan for the rest of the season.
+462381,35,Filip,Marschall,Marschall,0.0,2,7,u,Has joined Stevenage permanently.
+199796,36,Matty,Cash,Cash,5.1,2,7,a,
+101188,37,Lucas,Digne,Digne,1.6,2,7,a,
+199798,38,Ezri,Konsa Ngoyo,Konsa,8.7,2,7,a,
+441302,39,Ian,Maatsen,Maatsen,0.5,2,7,a,
+149484,40,Tyrone,Mings,Mings,0.9,2,7,a,
+244954,41,Pau,Torres,Pau,0.3,2,7,a,
+606798,42,Andrés,García,A.García,0.3,2,7,i,Knock - Unknown return date
+106468,43,Álex,Moreno Lopera,Alex Moreno,2.5,2,7,u,Has joined Girona permanently.
+515597,44,Lamare,Bogarde,Bogarde,0.7,2,7,a,
+514315,45,Lino,da Cruz Sousa,Sousa,0.3,2,7,a,
+587178,46,Yasin,Özcan,Yasin,0.1,2,7,u,has joined Anderlecht on loan for the rest of the season.
+244850,47,Morgan,Rogers,Rogers,4.8,2,7,a,
+166989,48,Youri,Tielemans,Tielemans,0.6,2,7,i,Calf injury - Expected back 09 Nov
+215711,49,Leon,Bailey,Bailey,0.1,2,7,u,Has joined AS Roma on loan for the rest of the season.
+195546,50,Emiliano,Buendía Stati,Buendía,0.2,2,7,i,Foot injury - Expected back 09 Nov
+469247,51,Samuel,Iling-Junior,Iling Jr,0.0,2,7,u,has joined West Bromwich Albion on loan for the rest of the season
+204646,53,Donyell,Malen,Malen,0.7,2,7,a,
+122806,54,John,McGinn,McGinn,0.6,2,7,a,
+88894,55,Ross,Barkley,Barkley,0.0,2,7,a,
+491287,56,Enzo,Barrenechea,Barrenechea,0.0,2,7,u,Season-long loan to Benfica
+461421,57,Lewis,Dobbin,Dobbin,0.0,2,7,u,Has joined Preston North End on loan for the rest of the season.
+226944,58,Boubacar,Kamara,Kamara,0.2,2,7,a,
+449871,59,Amadou,Onana,Onana,0.6,2,7,a,
+577731,60,Ben,Broggio,Broggio,0.3,2,7,a,
+151589,61,Leander,Dendoncker,Dendoncker,0.1,2,7,u,Has joined Real Oviedo permanently.
+559962,62,Jamaldeen,Jimoh-Aloba,Jimoh-Aloba,0.1,2,7,a,
+537403,63,Kadan,Young,Young,0.6,2,7,a,
+178301,64,Ollie,Watkins,Watkins,6.7,2,7,a,
+576756,65,Zépiqueno,Redmond,Redmond,0.4,2,7,u,has joined Huddersfield Town on loan for the rest of the season.
+444884,389,Harvey,Elliott,Elliott,0.3,2,7,n,Ineligible to face his parent club on 1/11. - Expected back 09 Nov
+209243,456,Jadon,Sancho,Sancho,0.2,2,7,a,
+485337,677,Evann,Guessand,Guessand,0.0,2,7,a,
+481283,688,James,Wright,Wright,0.5,2,7,a,
+569577,701,Triston,Rowe,Rowe,0.1,2,7,u,has joined Annecy on loan for the rest of the season.
+645618,702,Bradley,Burrowes,Burrowes,0.1,2,7,a,
+564505,703,Sam,Proctor,Proctor,0.2,2,7,a,
+534836,710,Travis,Patterson,Patterson,0.3,2,7,a,
+184667,719,Victor,Lindelöf,Lindelöf,0.0,2,7,a,
+518030,183,Max,Weiß,Weiss,0.1,3,90,a,
+489571,184,Etienne,Green,Green,0.2,3,90,u,has joined FC Fredericia permanently.
+51943,185,Václav,Hladký,Hladký,0.2,3,90,a,
+192290,186,Connor,Roberts,Roberts,0.0,3,90,i,Achilles injury - Unknown return date
+58621,187,Kyle,Walker,Walker,1.6,3,90,a,
+247245,188,Hannes,Delcroix,Delcroix,0.2,3,90,a,
+461567,189,Owen,Dodgson,Dodgson,0.0,3,90,u,Has joined Stockport County on loan for the rest of the season.
+478969,190,Hjalmar,Ekdal,Ekdal,1.2,3,90,a,
+477717,191,Maxime,Estève,Estève,12.5,3,90,a,
+494960,192,Quilindschy,Hartman,Hartman,0.8,3,90,a,
+461188,193,Bashir,Humphreys,Humphreys,0.1,3,90,a,
+241231,194,Jordan,Beyer,Jordan,0.1,3,90,i,Hamstring injury - Unknown return date
+549329,195,Lucas,Pires Silva,Lucas Pires,0.2,3,90,a,
+450072,196,Shurandy,Sambo,Sambo,0.0,3,90,u,Has joined Sparta Rotterdam on loan for the rest of the season.
+519895,197,Oliver,Sonne,Sonne,0.1,3,90,a,
+180804,198,Axel,Tuanzebe,Tuanzebe,1.8,3,90,a,
+208912,199,Joe,Worrall,Worrall,0.2,3,90,a,
+444180,200,Jaidon,Anthony,Anthony,6.5,3,90,a,
+183751,201,Manuel,Benson Hedilazio,Benson,0.0,3,90,u,has joined Swansea City on loan for the rest of the season.
+179458,202,Jacob,Bruun Larsen,Bruun Larsen,0.0,3,90,a,
+578614,203,Enock,Agyei,Boateng,0.0,3,90,a,
+250735,204,Darko,Churlinov,Churlinov,0.0,3,90,u,has joined Kocaelispor  permanently.
+172567,205,Josh,Cullen,Cullen,2.4,3,90,a,
+174592,206,Marcus,Edwards,Edwards,0.1,3,90,a,
+465527,207,Hannibal,Mejbri,Hannibal,0.1,3,90,a,
+487702,208,Luca,Koleosho,Koleosho,0.0,3,90,u,Has joined Espanyol on loan for the rest of the season.
+167887,209,Josh,Laurent,Laurent,0.0,3,90,a,
+469272,210,Loum,Tchaouna,Tchaouna,0.0,3,90,a,
+447715,211,Aaron,Ramsey,A.Ramsey,2.3,3,90,u,has joined Leicester City on loan for the rest of the season.
+576323,212,Oluwaseun,Adewumi,Adewumi,0.0,3,90,u,Has joined Cercle Brugge on loan for the rest of the season.
+551206,213,Jaydon,Banel,Banel,0.0,3,90,a,
+437748,214,Mike,Trésor Ndayishimiye,Trésor,0.1,3,90,a,
+431639,215,Zian,Flemming,Flemming,0.2,3,90,a,
+492831,216,Zeki,Amdouni,Amdouni,0.0,3,90,i,Knee injury - Unknown return date
+435973,217,Lyle,Foster,Foster,1.8,3,90,a,
+44699,218,Ashley,Barnes,Barnes,1.3,3,90,a,
+220598,219,Michael,Obafemi,Obafemi,0.1,3,90,u,has joined VfL Bochum  on loan for the rest of the season.
+67089,470,Martin,Dúbravka,Dúbravka,34.3,3,90,a,
+503714,676,Lesley,Ugochukwu,Ugochukwu,0.1,3,90,a,
+440323,680,Armando,Broja,Broja,0.1,3,90,a,
+216055,722,Florentino Ibrain,Morris Luís,Florentino,0.1,3,90,a,
+69752,66,Norberto,Murara Neto,Neto,0.1,4,91,u,Has joined Botafogo permanently.
+457569,67,Đorđe,Petrović,Petrović,5.6,4,91,a,
+444172,68,Will,Dennis,Dennis,1.0,4,91,a,
+568791,69,Callan,McKenna,McKenna,0.2,4,91,a,
+495145,70,Alex,Paulsen,Paulsen,0.1,4,91,u,Has joined Lechia Gdansk on loan for the rest of the season.
+477580,71,Illia,Zabarnyi,Zabarnyi,0.0,4,91,u,Has joined Paris Saint-Germain permanently.
+221466,72,Marcos,Senesi Barón,Senesi,26.3,4,91,a,
+54469,73,Adam,Smith,Smith,0.2,4,91,a,
+494521,74,Adrien,Truffert,Truffert,2.3,4,91,a,
+541462,75,Matai,Akinmboni,Akinmboni,0.3,4,91,a,
+518906,76,Owen,Bevan,Bevan,0.2,4,91,a,
+463981,77,James,Hill,Hill,0.9,4,91,a,
+436893,78,Julián,Araujo Zúñiga,J.Araujo,0.7,4,91,a,
+223911,79,Chris,Mepham,Mepham,0.1,4,91,u,has joined West Bromwich Albion permanently.
+575901,80,Julio,Soler Barreto,Soler,0.2,4,91,a,
+222683,81,Justin,Kluivert,Kluivert,1.1,4,91,a,
+437730,82,Antoine,Semenyo,Semenyo,64.1,4,91,a,
+201658,84,Marcus,Tavernier,Tavernier,1.4,4,91,a,
+200785,85,Tyler,Adams,Adams,0.4,4,91,a,
+111317,86,David,Brooks,Brooks,0.2,4,91,a,
+158499,87,Ryan,Christie,Christie,0.1,4,91,a,
+155408,88,Lewis,Cook,Cook,0.0,4,91,a,
+168991,89,Philip,Billing,Philip,0.0,4,91,u,Has joined Midtjylland permanently.
+503139,90,Alex,Scott,Scott,0.3,4,91,a,
+224995,91,Luis,Sinisterra Lucumí,Sinisterra,0.0,4,91,u,Has joined Cruzeiro on loan for the rest of the season.
+441240,92,Romain,Faivre,Faivre,0.1,4,91,u,has joined Al Taawoun permanently.
+424044,93,Hamed,Traorè,H.Traorè,0.4,4,91,u,has joined Marseille on loan for the rest of the season.
+550596,94,Dominic,Sadi,Sadi,0.0,4,91,u,has joined Novi Pazar on loan for the rest of the season.
+530121,95,Zain,Silcott-Duberry,Silcott-Duberry,0.1,4,91,u,has joined Olympiakos permanently.
+606775,96,Ben,Winterburn,Winterburn,0.0,4,91,u,has joined Barnet on loan for the rest of the season.
+444102,97,Francisco Evanilson,de Lima Barbosa,Evanilson,1.5,4,91,a,
+168636,98,Enes,Ünal,Enes Ünal,0.0,4,91,a,
+590760,99,Daniel,Adu-Adjei,Adu-Adjei,0.2,4,91,u,has joined HNK Rijeka permanently.
+560262,100,Eli Junior,Kroupi,Kroupi.Jr,3.7,4,91,a,
+496208,391,Ben,Gannon-Doak,Gannon-Doak,0.0,4,91,a,
+242882,685,Bafodé,Diakité,Diakité,0.5,4,91,a,
+606774,687,Remy,Rees-Dottin,Rees-Dottin,0.1,4,91,a,
+489888,697,Amine,Adli,Adli,0.0,4,91,a,
+551483,713,Álex,Jiménez Sánchez,A.Jimenez,0.0,4,91,a,
+620487,721,Veljko,Milosavljevic,Milosavljević,0.0,4,91,a,
+200641,27,Reiss,Nelson,Nelson,0.1,5,94,a,
+533463,83,Dango,Ouattara,O.Dango,0.5,5,94,a,
+200720,101,Caoimhín,Kelleher,Kelleher,7.9,5,94,a,
+235448,102,Ellery,Balcombe,Balcombe,0.3,5,94,a,
+503300,103,Matthew,Cox,Cox,0.1,5,94,a,
+535017,104,Julian,Eyestone,Eyestone,0.1,5,94,a,
+507433,105,Hákon Rafn,Valdimarsson,Valdimarsson,0.7,5,94,a,
+432830,106,Nathan,Collins,Collins,1.2,5,94,a,
+249231,107,Keane,Lewis-Potter,Lewis-Potter,0.3,5,94,a,
+191866,108,Kristoffer,Ajer,Ajer,0.2,5,94,a,
+194010,109,Rico,Henry,Henry,0.1,5,94,a,
+607464,110,Michael,Kayode,Kayode,0.4,5,94,a,
+231065,111,Ethan,Pinnock,Pinnock,0.1,5,94,a,
+226956,112,Mads,Roerslev Rasmussen,Roerslev,0.0,5,94,u,Has joined Southampton permanently.
+444765,113,Sepp,van den Berg,Van den Berg,0.6,5,94,a,
+622536,114,Benjamin,Arthur,Arthur,0.2,5,94,i,Knee injury - Expected back 09 Nov
+612534,115,Benjamin,Fredrick,Fredrick,0.1,5,94,u,has joined Dender on loan for the rest of the season.
+472713,116,Aaron,Hickey,Hickey,0.3,5,94,a,
+570241,117,Kim,Ji-soo,Ji-soo,0.1,5,94,u,has joined Kaiserslautern on loan for the rest of the season.
+499717,118,Jayden,Meghoma,Meghoma,0.1,5,94,u,Has joined Rangers on loan for the rest of the season.
+513418,120,Kevin,Schade,Schade,0.7,5,94,a,
+440089,121,Mikkel,Damsgaard,Damsgaard,0.6,5,94,a,
+543295,122,Antoni,Milambo,Milambo,0.0,5,94,i,Knee injury - Expected back 01 Jun
+244858,123,Fábio,Freitas Gouveia Carvalho,Carvalho,0.2,5,94,a,
+56979,124,Jordan,Henderson,Henderson,0.4,5,94,a,
+204580,125,Vitaly,Janelt,Janelt,0.0,5,94,a,
+207283,126,Mathias,Jensen,Jensen,0.1,5,94,a,
+626464,127,Gustavo,Nunes Fernandes Gomes,Nunes,0.0,5,94,a,
+428580,128,Frank,Onyeka,Onyeka,0.1,5,94,a,
+508395,129,Yehor,Yarmoliuk,Yarmoliuk,0.1,5,94,a,
+606689,130,Romelle,Donovan,Donovan,0.1,5,94,a,
+628204,131,Yunus Emre,Konak,Konak,0.2,5,94,a,
+220695,132,Paris,Maghoma,Maghoma,0.0,5,94,a,
+450539,133,Myles,Peart-Harris,Peart-Harris,0.0,5,94,a,
+591357,134,Ryan,Trevitt,Trevitt,0.0,5,94,u,Has joined Wigan on loan for the rest of the season
+502500,136,Igor Thiago,Nascimento Rodrigues,Thiago,7.6,5,94,a,
+533710,137,Iwan,Morgan,Morgan,0.4,5,94,a,
+49262,138,Jason,Steele,Steele,0.3,6,36,a,
+489639,139,Bart,Verbruggen,Verbruggen,4.1,6,36,a,
+209288,140,Tom,McGill,McGill,0.3,6,36,a,
+472739,141,Carl,Rushworth,Rushworth,0.0,6,36,u,Has joined Coventry City on loan for the rest of the season.
+240514,142,Kjell,Scherpen,Scherpen,0.0,6,36,u,Has joined Union SG permanently
+204120,143,Olivier,Boscagli,Boscagli,0.1,6,36,a,
+550090,144,Diego,Coppola,Coppola,0.1,6,36,a,
+465730,145,Maxim,De Cuyper,De Cuyper,2.1,6,36,a,
+83299,146,Lewis,Dunk,Dunk,1.2,6,36,a,
+204214,147,Pervis,Estupiñán Tenorio,Estupiñan,0.0,6,36,u,Has joined AC Milan permanently
+231416,148,Ferdi,Kadıoğlu,F.Kadıoğlu,0.2,6,36,a,
+232792,150,Tariq,Lamptey,Lamptey,0.1,6,36,u,has joined Fiorentina permanently.
+469142,151,Jan Paul,van Hecke,Van Hecke,1.3,6,36,a,
+111478,152,Joël,Veltman,Veltman,0.1,6,36,d,Calf injury - 25% chance of playing
+110735,153,Adam,Webster,Webster,0.0,6,36,i,Knee injury - Unknown return date
+439135,154,Eiran,Cashin,Cashin,0.0,6,36,u,Has joined Birmingham on loan for the rest of the season.
+589100,155,Jacob,Slater,Slater,0.1,6,36,u,has joined Harrogate Town on loan until January.
+547720,156,Charlie,Tasker,Tasker,0.1,6,36,a,
+451340,157,Mitoma,Kaoru,Mitoma,2.5,6,36,d,Knock - 25% chance of playing
+463067,158,Georginio,Rutter,Georginio,0.4,6,36,a,
+109345,159,Solly,March,March,0.0,6,36,i,Knee injury - Unknown return date
+592031,160,Yankuba,Minteh,Minteh,4.0,6,36,a,
+474120,161,Julio,Enciso Espínola,Enciso,0.0,6,36,u,has joined Strasbourg permanently.
+513433,162,Brajan,Gruda,Gruda,0.1,6,36,d,Knee injury - 25% chance of playing
+532529,163,Jack,Hinshelwood,Hinshelwood,0.0,6,36,i,Ankle injury - Unknown return date
+219249,164,Matt,O'Riley,O'Riley,0.4,6,36,u,has joined Marseille on loan for the rest of the season.
+516211,165,Abdallah,Sima,Sima,0.0,6,36,u,has joined Lens permanently.
+509416,166,Yasin,Ayari,Ayari,0.3,6,36,a,
+535301,167,Carlos,Baleba,Baleba,2.1,6,36,a,
+514254,169,Diego,Gómez Amarilla,Gomez,0.1,6,36,a,
+15157,170,James,Milner,Milner,0.1,6,36,d,Muscle injury - 25% chance of playing
+441192,171,Jeremy,Sarmiento Morante,Sarmiento,0.0,6,36,u,has joined Cremonese on loan for the rest of the season.
+549074,172,Tom,Watson,Watson,0.0,6,36,a,
+467779,173,Mats,Wieffer,Wieffer,0.1,6,36,a,
+611695,174,Malick,Yalcouyé,Yalcouye,0.0,6,36,u,Has joined Swansea City on loan for the rest of the season.
+567121,175,Joe,Knight,Knight,0.1,6,36,a,
+550141,176,Adrian,Mazilu,Mazilu,0.0,6,36,u,has joined Dinamo Bucharest permanently.
+513834,177,Andrew,Moran,Moran,0.0,6,36,u,Has joined Los Angeles FC on loan for the rest of the season.
+50175,178,Danny,Welbeck,Welbeck,6.7,6,36,a,
+487117,179,Evan,Ferguson,Ferguson,0.0,6,36,u,Has joined AS Roma on loan for the rest of the season
+608181,180,Stefanos,Tzimas,Tzimas,0.1,6,36,a,
+647850,181,Charalampos,Kostoulas,Kostoulas,0.3,6,36,a,
+556637,744,Nehemiah,Oriola,Oriola,0.0,6,36,a,
+536916,168,Facundo,Buonanotte,Buonanotte,0.1,7,8,a,
+215059,220,Robert,Lynch Sánchez,Sánchez,13.6,7,8,a,
+508479,221,Filip,Jörgensen,Jörgensen,0.2,7,8,a,
+549939,222,Mike,Penders,Penders,0.0,7,8,u,Has joined RC Strasbourg on loan for the rest of the season.
+471798,223,Gabriel,Słonina,Slonina,0.1,7,8,a,
+179268,224,Marc,Cucurella Saseta,Cucurella,21.9,7,8,a,
+225796,225,Reece,James,James,7.5,7,8,a,
+180736,226,Trevoh,Chalobah,Chalobah,7.6,7,8,a,
+460028,227,Levi,Samuels Colwill,Colwill,0.1,7,8,i,Anterior cruciate ligament - Unknown return date
+482609,228,Malo,Gusto,Gusto,1.0,7,8,a,
+242880,229,Benoît,Badiashile Mukinayi,B.Badiashile,0.0,7,8,i,Muscle injury - Expected back 03 Dec
+444463,230,Wesley,Fofana,Fofana,0.2,7,8,a,
+574458,231,Mamadou,Sarr,M.Sarr,0.0,7,8,u,Has joined RC Strasbourg on loan for the rest of the season.
+109646,232,Tosin,Adarabioyo,Tosin,0.4,7,8,a,
+577016,233,Josh,Acheampong,Acheampong,2.2,7,8,a,
+622758,234,Aarón,Anselmino,Anselmino,0.1,7,8,u,has joined Borussia Dortmund on loan for the rest of the season.
+244851,235,Cole,Palmer,Palmer,9.4,7,8,i,Groin Injury - Expected back 22 Nov
+247632,236,Pedro,Lomba Neto,Neto,5.5,7,8,a,
+448047,237,Enzo,Fernández,Enzo,14.5,7,8,a,
+624773,238,Estêvão,Almeida de Oliveira Gonçalves,Estêvão,2.4,7,8,a,
+463936,239,Jamie,Bynoe-Gittens,Gittens,0.1,7,8,a,
+213198,240,Christopher,Nkunku,Nkunku,0.1,7,8,u,has joined AC Milan permanently.
+486672,241,Moisés,Caicedo Corozo,Caicedo,18.2,7,8,a,
+550615,243,Tyrique,George,George,0.1,7,8,a,
+514356,244,Roméo,Lavia,Lavia,0.0,7,8,a,
+465920,245,Mykhailo,Mudryk,Mudryk,0.0,7,8,s,Suspended - unknown return date
+532605,246,Andrey,Nascimento dos Santos,Andrey Santos,0.3,7,8,a,
+491007,247,Dário,Luís Essugo,D.Essugo,0.1,7,8,i,Thigh injury - Unknown return date
+611134,248,Kendry,Páez Andrade,Paez,0.0,7,8,u,Has joined RC Strasbourg on loan for the rest of the season.
+475168,249,João Pedro,Junqueira de Jesus,João Pedro,47.4,7,8,a,
+463034,250,Liam,Delap,Delap,0.9,7,8,s,Suspended until 08 Nov
+517052,251,Nicolas,Jackson,N.Jackson,0.1,7,8,u,has joined Bayern Munich on loan for the rest of the season.
+499309,252,Marc,Guiu Paz,Marc Guiu,7.0,7,8,a,
+493105,453,Alejandro,Garnacho Ferreyra,Garnacho,0.4,7,8,a,
+551210,672,Jorrel,Hato,Hato,0.2,7,8,a,
+611912,743,Landon,Emenalo,Emenalo,0.0,7,8,a,
+172649,253,Dean,Henderson,Henderson,7.5,8,31,a,
+121709,254,Walter,Benítez,Benitez,0.3,8,31,a,
+169593,255,Remi,Matthews,Matthews,0.1,8,31,a,
+247348,256,Daniel,Muñoz Mejía,Muñoz,14.8,8,31,a,
+437499,257,Maxence,Lacroix,Lacroix,3.7,8,31,a,
+244723,258,Tyrick,Mitchell,Mitchell,2.3,8,31,a,
+218364,259,Borna,Sosa,Sosa,0.1,8,31,a,
+209036,260,Marc,Guéhi,Guéhi,33.1,8,31,a,
+427623,261,Chris,Richards,Richards,3.2,8,31,a,
+515621,262,Chadi,Riad Dnanou,Chadi Riad,0.0,8,31,i,Knee injury - Expected back 09 Nov
+57328,263,Nathaniel,Clyne,Clyne,0.5,8,31,a,
+156074,264,Rob,Holding,Holding,0.0,8,31,u,Has joined Colorado Rapids permanently.
+590012,265,Caleb,Kporha,Kporha,0.0,8,31,i,Back injury - Unknown return date
+232185,267,Ismaïla,Sarr,Sarr,10.4,8,31,a,
+438464,268,Cheick,Doucouré,Doucouré,0.0,8,31,i,Knee injury - Unknown return date
+606921,269,Romain,Esse,Esse,0.1,8,31,a,
+108413,270,Will,Hughes,Hughes,0.1,8,31,a,
+209400,271,Daichi,Kamada,Kamada,0.1,8,31,a,
+152551,272,Jefferson,Lerma Solís,Lerma,0.1,8,31,a,
+496221,273,Adam,Wharton,Wharton,0.5,8,31,i,Illness - Expected back 09 Nov
+579075,274,Asher,Agbinone,Agbinone,0.1,8,31,a,
+466117,275,Naouirou,Ahamada,Ahamada,0.0,8,31,a,
+489706,276,Justin,Devenny,Devenny,1.1,8,31,a,
+450535,277,Malcolm,Ebiowei,Ebiowei,0.0,8,31,u,Has joined Blackpool permanently.
+450542,278,Jesurun,Rak-Sakyi,J.Rak-Sakyi,0.0,8,31,u,has joined Caykur Rizespor on loan for the rest of the season.
+536694,279,Matheus,França de Oliveira,M.França,0.0,8,31,u,Has joined CR Vasco da Gama on loan for the rest of the season.
+531989,280,David,Ozoh,Ozoh,0.0,8,31,u,Has joined Derby County on loan for the rest of the season.
+530318,281,Kaden,Rodney,Rodney,0.0,8,31,a,
+574398,282,Franco,Umeh-Chibueze,Umeh,0.0,8,31,u,has joined Portsmouth permanently.
+231747,283,Jean-Philippe,Mateta,Mateta,19.3,8,31,a,
+205533,284,Eddie,Nketiah,Nketiah,0.5,8,31,i,Hamstring injury - Expected back 22 Nov
+199670,285,Odsonne,Édouard,Édouard,0.3,8,31,u,has joined RC Lens permanently.
+576980,286,Zach,Marsh,Marsh,0.3,8,31,a,
+590014,690,Rio,Cardines,Cardines,0.4,8,31,a,
+488024,712,Yéremy,Pino Santos,Yeremy,0.1,8,31,a,
+651426,723,Jaydee,Canvot,Canvot,0.0,8,31,a,
+660392,732,Christantus,Uche,Uche,0.0,8,31,a,
+215413,242,Kiernan,Dewsbury-Hall,Dewsbury-Hall,3.0,9,11,a,
+111234,287,Jordan,Pickford,Pickford,9.8,9,11,a,
+229600,288,Mark,Travers,Travers,0.1,9,11,a,
+447325,289,Harry,Tyrer,Tyrer,0.1,9,11,a,
+480455,290,Jarrad,Branthwaite,Branthwaite,0.2,9,11,i,Hamstring injury - Unknown return date
+17761,291,James,Tarkowski,Tarkowski,6.5,9,11,a,
+224967,292,Vitalii,Mykolenko,Mykolenko,0.4,9,11,a,
+512462,293,Jake,O'Brien,O'Brien,0.4,9,11,a,
+59949,294,Séamus,Coleman,Coleman,0.1,9,11,a,
+106611,295,Michael,Keane,Keane,1.1,9,11,a,
+243571,296,Nathan,Patterson,Patterson,0.0,9,11,i,Foot injury - Expected back 23 Nov
+496178,297,Roman,Dixon,Dixon,0.2,9,11,a,
+474907,298,Reece,Welch,Welch,0.1,9,11,a,
+440993,299,Iliman,Ndiaye,Ndiaye,11.1,9,11,a,
+433154,300,Dwight,McNeil,McNeil,0.1,9,11,a,
+502697,301,Carlos,Alcaraz Durán,Alcaraz,0.1,9,11,a,
+80801,302,Idrissa Gana,Gueye,Gana,0.1,9,11,a,
+232928,303,James,Garner,Garner,0.9,9,11,a,
+490094,304,Tim,Iroegbunam,Iroegbunam,0.0,9,11,a,
+609873,305,Harrison,Armstrong,Armstrong,0.1,9,11,u,has joined Preston North End on loan for the rest of the season.
+547801,306,Callum,Bates,Bates,0.1,9,11,a,
+504296,307,Coby,Ebere,Ebere,0.0,9,11,a,
+496279,308,Isaac,Heath,Heath,0.0,9,11,u,has joined Accrington on loan for the rest of the season.
+491557,309,Jenson,Metcalfe,Metcalfe,0.0,9,11,u,Has joined Bradford City permanently.
+586309,310,Thierno,Barry,Barry,0.3,9,11,a,
+486385,311,Norberto Bercique,Gomes Betuncal,Beto,3.4,9,11,a,
+491012,312,Youssef,Ramalho Chermiti,Y.Chermiti,0.1,9,11,u,has joined Rangers permanently.
+536241,313,Martin,Sherif,Sherif,0.1,9,11,u,has joined Rotherham United on loan for the rest of the season.
+114283,419,Jack,Grealish,Grealish,17.9,9,11,a,
+138001,630,Tom,King,King,1.2,9,11,a,
+499300,667,Adam,Aznou,Aznou,0.1,9,11,a,
+461446,704,Tyler,Onyango,Onyango,0.1,9,11,u,has joined Stockport County on loan for the rest of the season.
+491745,705,Elijah,Campbell,Campbell,0.2,9,11,a,
+496661,707,Tyler,Dibling,Dibling,0.0,9,11,a,
+513466,728,Merlin,Röhl,Röhl,0.0,9,11,a,
+80201,314,Bernd,Leno,Leno,1.6,10,54,a,
+428971,315,Steven,Benda,Benda,0.0,10,54,u,Has joined Millwall on loan for the rest of the season.
+169528,316,Antonee,Robinson,Robinson,0.5,10,54,i,Knee injury - Unknown return date
+174874,317,Joachim,Andersen,Andersen,2.7,10,54,a,
+232892,318,Calvin,Bassey,Bassey,0.6,10,54,a,
+166477,319,Timothy,Castagne,Castagne,0.1,10,54,a,
+219924,320,Issa,Diop,Diop,0.1,10,54,a,
+246301,321,Jorge,Cuenca Barreno,J.Cuenca,0.0,10,54,a,
+167074,322,Kenny,Tete,Tete,0.2,10,54,a,
+591385,323,Samuel,Amissah,Amissah,0.1,10,54,a,
+153133,324,Alex,Iwobi,Iwobi,1.7,10,54,a,
+209289,325,Emile,Smith Rowe,Smith Rowe,0.4,10,54,d,Hamstring injury - 75% chance of playing
+159533,326,Adama,Traoré Diarra,Adama,0.2,10,54,a,
+156689,327,Andreas,Hoelgebaum Pereira,Andreas,0.1,10,54,u,has joined Palmeiras permanently.
+184349,328,Ryan,Sessegnon,Sessegnon,0.2,10,54,a,
+153682,329,Harry,Wilson,Wilson,0.3,10,54,d,Knock - 75% chance of playing
+207189,330,Sander,Berge,Berge,0.1,10,54,a,
+76357,331,Tom,Cairney,Cairney,0.0,10,54,a,
+212314,332,Saša,Lukić,Lukić,0.1,10,54,a,
+573062,333,Martial,Godo,Godo,0.0,10,54,u,has joined Strasbourg permanently.
+515024,334,Luke,Harris,Harris,0.0,10,54,u,Has joined Oxford United on loan for the rest of the season.
+577725,335,Josh,King,King,4.0,10,54,a,
+153366,336,Harrison,Reed,Reed,0.2,10,54,a,
+102057,337,Raúl,Jiménez Rodríguez,Raúl,0.9,10,54,d,Hip injury - 75% chance of playing
+244042,338,Rodrigo,Muniz Carvalho,Muniz,1.0,10,54,d,Hamstring injury - 75% chance of playing
+86873,664,Benjamin,Lecomte,Lecomte,0.6,10,54,a,
+218328,727,Samuel,Chukwueze,Chukwueze,0.0,10,54,d,Calf injury - 75% chance of playing
+560552,731,Kevin,Santos Lopes de Macedo,Kevin,0.1,10,54,a,
+631786,737,Jonah,Kusi-Asare,Kusi-Asare,0.1,10,54,a,
+437495,339,Illan,Meslier,Meslier,0.4,11,2,a,
+97846,340,Alex,Cairns,Cairns,0.2,11,2,a,
+59735,341,Karl,Darlow,Darlow,2.4,11,2,a,
+226182,342,Jayden,Bogle,Bogle,0.2,11,2,a,
+222694,343,Pascal,Struijk,Struijk,0.3,11,2,a,
+434752,344,Jaka,Bijol,Bijol,0.1,11,2,a,
+437738,345,Sebastiaan,Bornauw,Bornauw,0.1,11,2,a,
+113564,346,Sam,Byram,Byram,0.2,11,2,a,
+243526,347,Gabriel,Gudmundsson,Gudmundsson,4.9,11,2,a,
+214225,348,Joe,Rodon,Rodon,6.4,11,2,a,
+492368,349,Isaac,Schmidt,Schmidt,0.1,11,2,u,has joined Werder Bremen on loan for the rest of the season.
+427637,350,Brenden,Aaronson,Aaronson,0.2,11,2,a,
+492859,351,Wilfried,Gnonto,Gnonto,0.1,11,2,a,
+221399,352,Jack,Harrison,Harrison,0.1,11,2,a,
+200617,353,Daniel,James,James,0.1,11,2,a,
+199598,354,Ethan,Ampadu,Ampadu,0.1,11,2,a,
+248937,355,Sam,Greenwood,Greenwood,0.0,11,2,u,has joined Pogon Szczecin permanently.
+486520,356,Ilia,Gruev,Gruev,0.0,11,2,a,
+433952,357,Largie,Ramazani,Ramazani,0.0,11,2,u,has joined Valencia on loan for the rest of the season.
+248056,358,Tanaka,Ao,Tanaka,0.1,11,2,a,
+536119,359,Charlie,Crew,Crew,0.0,11,2,u,Has joined Doncaster Rovers on loan for the rest of the season.
+462635,360,Joe,Gelhardt,Gelhardt,0.0,11,2,u,Has joined Hull City on loan for the rest of the season.
+470294,361,Darko,Gyabi,Gyabi,0.0,11,2,u,has joined Hull City permanently.
+235826,362,Joël,Piroe,Piroe,0.4,11,2,a,
+106617,363,Patrick,Bamford,Bamford,0.4,11,2,u,has departed the club as a free agent.
+565297,364,Mateo,Joseph Fernández-Regatillo,Mateo Joseph,0.0,11,2,u,Has joined RCD Mallorca on loan for the rest of the season.
+174594,365,Lukas,Nmecha,Nmecha,0.7,11,2,a,
+180135,493,Sean,Longstaff,Longstaff,1.1,11,2,a,
+466525,660,Anton,Stach,Stach,2.7,11,2,a,
+201595,665,Lucas Estella,Perri,Perri,0.2,11,2,a,
+177815,691,Dominic,Calvert-Lewin,Calvert-Lewin,1.5,11,2,a,
+435997,698,Noah,Okafor,Okafor,0.2,11,2,a,
+220627,706,James,Justin,Justin,0.2,11,2,a,
+600882,741,Harry,Gray,Gray,0.1,11,2,a,
+116535,366,Alisson,Becker,A.Becker,6.0,12,14,i,Muscle injury - Unknown return date
+449027,367,Giorgi,Mamardashvili,Mamardashvili,0.9,12,14,a,
+586268,368,Ármin,Pécsi,Pécsi,0.4,12,14,a,
+155503,369,Freddie,Woodman,Woodman,0.2,12,14,a,
+216094,370,Jeremie,Frimpong,Frimpong,5.6,12,14,i,Hamstring injury - Unknown return date
+544877,371,Milos,Kerkez,Kerkez,3.7,12,14,a,
+122798,372,Andrew,Robertson,Robertson,0.9,12,14,a,
+97032,373,Virgil,van Dijk,Virgil,24.4,12,14,a,
+204716,374,Ibrahima,Konaté,Konaté,2.7,12,14,a,
+492777,375,Conor,Bradley,Bradley,0.2,12,14,a,
+171287,376,Joe,Gomez,Gomez,0.1,12,14,a,
+214285,377,Konstantinos,Tsimikas,Tsimikas,0.1,12,14,u,has joined AS Roma on loan for the rest of the season.
+611926,378,Amara,Nallo,Nallo,0.4,12,14,s,Suspended until 09 Nov
+219937,379,Rhys,Williams,R.Williams,0.2,12,14,a,
+489580,380,Calvin,Ramsay,Ramsay,0.2,12,14,a,
+118748,381,Mohamed,Salah,M.Salah,26.0,12,14,a,
+494595,382,Florian,Wirtz,Wirtz,7.7,12,14,a,
+244731,383,Luis,Díaz Marulanda,Luis Díaz,0.0,12,14,u,Has joined Bayern Munch permanently.
+243298,384,Cody,Gakpo,Gakpo,14.5,12,14,a,
+223541,385,Federico,Chiesa,Chiesa,0.3,12,14,a,
+243016,386,Alexis,Mac Allister,Mac Allister,1.2,12,14,a,
+424876,387,Dominik,Szoboszlai,Szoboszlai,4.1,12,14,a,
+206915,388,Curtis,Jones,C.Jones,0.1,12,14,d,Knock - 25% chance of playing
+441266,390,Ryan,Gravenberch,Gravenberch,4.0,12,14,d,Ankle injury - 75% chance of playing
+158983,392,Endo,Wataru,Endo,0.1,12,14,a,
+535928,393,Stefan,Bajčetić Maquieira,Bajcetic,0.0,12,14,i,Hamstring injury - Unknown return date
+491501,394,James,McConnell,McConnell,0.0,12,14,u,has joined Ajax on loan for the rest of the season.
+440148,395,Tyler,Morton,Morton,0.0,12,14,u,Has joined Lyon permanently.
+591386,396,Trey,Nyoni,Nyoni,0.6,12,14,a,
+447203,397,Darwin,Núñez Ribeiro,Darwin,0.1,12,14,u,Has joined Al-Hilal permanently.
+500058,398,Jayden,Danns,Danns,0.1,12,14,i,Hamstring injury - Unknown return date
+219168,499,Alexander,Isak,Isak,5.8,12,14,d,Groin Injury - 25% chance of playing
+510663,661,Hugo,Ekitiké,Ekitiké,16.4,12,14,a,
+611922,686,Rio,Ngumoha,Ngumoha,0.5,12,14,a,
+647681,692,Giovanni,Leoni,Leoni,0.0,12,14,i,Knee injury - Expected back 01 Sep
+596042,746,Kieran,Morrison,Morrison,0.0,12,14,a,
+432720,182,James,Trafford,Trafford,1.2,13,43,a,
+121160,399,Ederson,Santana de Moraes,Ederson M.,1.0,13,43,u,has joined Fenerbache permanently.
+88248,400,Stefan,Ortega Moreno,Ortega Moreno,0.2,13,43,a,
+122074,401,Marcus,Bettinelli,Bettinelli,0.1,13,43,a,
+448514,402,Rayan,Aït-Nouri,Aït-Nouri,5.0,13,43,a,
+477424,403,Joško,Gvardiol,Gvardiol,5.5,13,43,a,
+211975,404,Manuel,Akanji,Akanji,0.3,13,43,u,has joined Inter Milan on loan for the rest of the season.
+126184,405,Nathan,Aké,Aké,0.6,13,43,a,
+578153,406,Abdukodir,Khusanov,Khusanov,0.3,13,43,a,
+465351,407,Matheus,Nunes,Matheus N.,0.8,13,43,a,
+171314,408,Rúben,dos Santos Gato Alves Dias,Rúben,4.6,13,43,a,
+97299,409,John,Stones,Stones,0.7,13,43,a,
+477064,410,Rico,Lewis,Lewis,1.7,13,43,a,
+472769,411,Nico,O'Reilly,O’Reilly,1.0,13,43,a,
+616222,412,Vitor,de Oliveira Nunes dos Reis,Vitor Reis,0.0,13,43,u,Has joined Girona on loan for the rest of the season.
+438234,413,Omar,Marmoush,Marmoush,2.6,13,43,a,
+209244,414,Phil,Foden,Foden,4.6,13,43,a,
+510281,415,Sávio,Moreira de Oliveira,Savinho,0.5,13,43,a,
+165809,416,Bernardo,Mota Veiga de Carvalho e Silva,Bernardo,0.5,13,43,a,
+466052,417,Rayan,Cherki,Cherki,2.1,13,43,a,
+248875,418,Jérémy,Doku,Doku,5.5,13,43,a,
+59859,420,İlkay,Gündoğan,Gündoğan,0.1,13,43,u,has joined Galatasaray permanently.
+220566,421,Rodrigo 'Rodri',Hernandez Cascante,Rodrigo,0.5,13,43,d,Lack of match fitness - 75% chance of playing
+91651,422,Mateo,Kovačić,Kovačić,0.0,13,43,a,
+465694,423,Nico,González Iglesias,N.Gonzalez,0.1,13,43,a,
+477555,424,Oscar,Bobb,Bobb,0.3,13,43,a,
+575204,425,Claudio,Echeverri,Echeverri,0.0,13,43,u,Has joined Bayer Leverkusen on loan for the rest of the season.
+433036,427,Tijjani,Reijnders,Reijnders,25.1,13,43,a,
+566164,428,Sverre,Nypan,Nypan,0.0,13,43,u,Has joined Middlesbrough on loan for the rest of the season.
+155405,429,Kalvin,Phillips,Phillips,0.1,13,43,a,
+223094,430,Erling,Haaland,Haaland,69.0,13,43,a,
+204936,736,Gianluigi,Donnarumma,Donnarumma,10.3,13,43,a,
+590039,739,Divine,Mukasa,Mukasa,0.0,13,43,a,
+566213,740,Stephen,Mfuni,Mfuni,0.0,13,43,a,
+616288,742,Ryan,McAidoo,McAidoo,0.0,13,43,a,
+446008,119,Bryan,Mbeumo,Mbeumo,25.8,14,1,a,
+451302,431,Altay,Bayındır,Bayindir,0.4,14,1,a,
+202641,432,André,Onana,Onana,0.2,14,1,u,has joined Trabzonspor on loan for the rest of the season.
+588555,433,Elyh,Harrison,Harrison,0.0,14,1,u,On loan to Shrewsbury Town
+21205,434,Tom,Heaton,Heaton,0.3,14,1,a,
+461537,435,Dermot,Mee,Mee,0.1,14,1,a,
+209365,436,Matthijs,de Ligt,De Ligt,3.0,14,1,a,
+221820,437,Lisandro,Martínez,Martinez,0.1,14,1,i,Knee injury - Unknown return date
+230001,438,Noussair,Mazraoui,Mazraoui,0.2,14,1,a,
+661712,439,Diego,León Blanco,D.Leon,0.1,14,1,a,
+216051,440,Diogo,Dalot Teixeira,Dalot,1.0,14,1,a,
+596777,441,Patrick,Dorgu,Dorgu,3.2,14,1,a,
+95658,442,Harry,Maguire,Maguire,0.8,14,1,d,Knock - 50% chance of playing
+106760,443,Luke,Shaw,Shaw,0.4,14,1,a,
+550864,444,Leny,Yoro,Yoro,1.8,14,1,a,
+577974,445,Harry,Amass,Amass,0.1,14,1,u,has joined Sheffield Wednesday on loan for the rest of the season.
+547676,446,Tyler,Fredricson,Fredricson,0.1,14,1,a,
+606745,447,Ayden,Heaven,Heaven,1.0,14,1,a,
+222690,448,Tyrell,Malacia,Malacia,0.3,14,1,a,
+141746,449,Bruno,Borges Fernandes,B.Fernandes,16.6,14,1,a,
+430871,450,Matheus,Santos Carneiro da Cunha,Cunha,4.3,14,1,a,
+176297,451,Marcus,Rashford,Rashford,0.0,14,1,u,Has joined Barcelona on loan for the rest of the season
+493250,452,Amad,Diallo,Amad,1.3,14,1,a,
+467169,454,Antony,dos Santos,Antony,0.1,14,1,u,has joined Real Betis permanently.
+184341,455,Mason,Mount,Mount,0.3,14,1,a,
+61256,457,Carlos Henrique,Casimiro,Casemiro,0.4,14,1,a,
+516895,458,Kobbie,Mainoo,Mainoo,0.5,14,1,a,
+232112,459,Manuel,Ugarte Ribeiro,Ugarte,0.1,14,1,a,
+490881,460,Toby,Collyer,Collyer,0.0,14,1,u,Has joined West Bromwich Albion on loan for the rest of the season.
+556639,461,Jayce,Fitzgerald,Fitzgerald,0.0,14,1,a,
+547037,462,Jack,Fletcher,J.Fletcher,0.1,14,1,a,
+618873,463,Sékou,Koné,Kone,0.1,14,1,a,
+559684,464,Jack,Moorhouse,Moorhouse,0.0,14,1,u,has joined Leyton Orient on loan for the rest of the season.
+497894,465,Rasmus,Højlund,Højlund,0.3,14,1,u,has joined Napoli on loan for the rest of the season.
+458249,466,Joshua,Zirkzee,Zirkzee,0.4,14,1,a,
+596047,467,Chido,Obi,Obi,1.6,14,1,a,
+575034,468,Ethan,Wheatley,Wheatley,0.1,14,1,u,has joined Northampton Town on loan for the rest of the season.
+485711,681,Benjamin,Sesko,Šeško,5.4,14,1,a,
+465247,733,Senne,Lammens,Lammens,1.3,14,1,a,
+232653,52,Jacob,Ramsey,J.Ramsey,0.2,15,4,a,
+216646,135,Yoane,Wissa,Wissa,0.5,15,4,i,Knee injury - Expected back 22 Nov
+98747,469,Nick,Pope,Pope,12.3,15,4,a,
+81441,471,Mark,Gillespie,Gillespie,0.1,15,4,a,
+111452,472,Odysseas,Vlachodimos,Odysseas,0.0,15,4,u,Has joined Sevilla on loan for the rest of the season.
+487838,473,Lewis,Hall,Hall,0.8,15,4,d,Hamstring injury - 25% chance of playing
+119471,474,Fabian,Schär,Schär,1.9,15,4,a,
+220237,475,Sven,Botman,Botman,0.7,15,4,a,
+78916,476,Dan,Burn,Burn,11.0,15,4,a,
+441191,477,Tino,Livramento,Livramento,3.3,15,4,i,Knee injury - Expected back 22 Nov
+77794,478,Kieran,Trippier,Trippier,2.7,15,4,a,
+111773,479,Emil,Krafth,Krafth,0.0,15,4,a,
+101148,480,Jamaal,Lascelles,Lascelles,0.1,15,4,a,
+545477,481,Alex,Murphy,A.Murphy,0.6,15,4,a,
+441024,482,Harrison,Ashby,Ashby,0.1,15,4,i,Thigh injury - Unknown return date
+578512,483,Miodrag,Pivaš,Pivas,0.2,15,4,a,
+169359,484,Matt,Targett,Targett,0.2,15,4,u,has joined Middlesbrough on loan for the rest of the season.
+232826,485,Anthony,Gordon,Gordon,3.2,15,4,a,
+449434,486,Anthony,Elanga,Elanga,3.8,15,4,a,
+201666,487,Harvey,Barnes,Barnes,0.4,15,4,a,
+208706,488,Bruno,Guimarães Rodriguez Moura,Bruno G.,3.4,15,4,a,
+114243,489,Jacob,Murphy,J.Murphy,1.0,15,4,a,
+180974,490,Joelinton Cássio,Apolinário de Lira,Joelinton,0.3,15,4,a,
+432422,491,Sandro,Tonali,Tonali,1.4,15,4,a,
+640108,492,Antoñito,Cordero Campillo,Antoñito C.,0.0,15,4,u,has joined KVC Westerlo on loan for the rest of the season.
+200089,494,Joe,Willock,Willock,0.1,15,4,a,
+153127,495,Isaac,Hayden,Hayden,0.0,15,4,u,Has departed the club as a free agent.
+564510,496,Garang,Kuol,Kuol,0.0,15,4,u,has joined Sparta Prague permanently.
+547719,497,Lewis,Miley,L.Miley,2.1,15,4,a,
+461484,498,Joe,White,White,0.0,15,4,u,Has joined Leyton Orient on loan for the rest of the season.
+538207,500,William,Osula,Osula,0.3,15,4,a,
+599303,501,Sean,Neave,Neave,0.2,15,4,a,
+225321,674,Aaron,Ramsdale,Ramsdale,0.6,15,4,a,
+465642,684,Malick,Thiaw,Thiaw,0.5,15,4,a,
+623110,689,Seung-Soo,Park,Seung soo,0.3,15,4,a,
+470313,714,Nick,Woltemade,Woltemade,24.3,15,4,a,
+206325,12,Oleksandr,Zinchenko,Zinchenko,0.3,16,17,i,Muscle injury - Unknown return date
+432714,426,James,McAtee,McAtee,0.1,16,17,a,
+85633,502,Matz,Sels,Sels,8.6,16,17,a,
+475123,503,Carlos Miguel,dos Santos Pereira,C.Miguel,0.1,16,17,u,Has joined Palmeiras permanently.
+224068,504,Matt,Turner,Turner,0.1,16,17,u,Has joined Lyon permanently.
+227444,505,Nikola,Milenković,Milenković,4.2,16,17,a,
+575476,506,Murillo,Costa dos Santos,Murillo,2.0,16,17,a,
+159506,507,Ola,Aina,Aina,2.6,16,17,i,Hamstring injury - Expected back 13 Dec
+215136,508,Neco,Williams,N.Williams,3.6,16,17,a,
+451432,509,David,Mota Veiga Teixeira do Carmo,David Carmo,0.0,16,17,u,has joined Real Oviedo on loan for the rest of the season.
+575458,510,Jair,Paula da Cunha Filho,Jair Cunha,0.1,16,17,a,
+485047,511,Felipe,Rodrigues da Silva,Morato,0.1,16,17,a,
+204822,512,Omar,Richards,O.Richards,0.0,16,17,u,has joined Rio Ave on loan for the rest of the season.
+549067,513,Zach,Abbott,Abbott,0.2,16,17,a,
+90585,514,Willy,Boly,Boly,0.5,16,17,a,
+222531,515,Morgan,Gibbs-White,Gibbs-White,2.9,16,17,a,
+209046,516,Callum,Hudson-Odoi,Hudson-Odoi,0.8,16,17,a,
+215379,517,Elliot,Anderson,Anderson,3.1,16,17,a,
+510500,518,João Pedro,Ferreira da Silva,Jota,0.0,16,17,u,has joined Besiktas on loan for the rest of the season.
+250199,519,Nicolás,Domínguez,Dominguez,0.0,16,17,a,
+243345,520,Lewis,O'Brien,O'Brien,0.0,16,17,u,Has joined Wrexham permanently.
+210462,521,Ibrahim,Sangaré,Sangaré,0.1,16,17,a,
+204968,522,Ryan,Yates,Yates,0.1,16,17,a,
+569014,523,Eric,da Silva Moreira,Da Silva Moreira,0.1,16,17,u,has joined Rio Ave on loan for the rest of the season.
+495161,524,Marko,Stamenić,Stamenic,0.0,16,17,u,Has joined Swansea City permanently.
+60689,525,Chris,Wood,Wood,7.1,16,17,i,Knee injury - Expected back 09 Nov
+482973,526,Igor Jesus,Maciel da Cruz,Igor Jesus,0.6,16,17,a,
+210156,527,Taiwo,Awoniyi,Awoniyi,0.4,16,17,a,
+456512,669,Dan,Ndoye,Ndoye,1.3,16,17,a,
+107265,675,Angus,Gunn,Gunn,1.5,16,17,i,Knee injury - Unknown return date
+503301,693,Omari,Hutchinson,Hutchinson,0.0,16,17,a,
+465680,696,Arnaud,Kalimuendo,Kalimuendo,0.1,16,17,a,
+230046,699,Douglas Luiz,Soares de Paulo,Douglas Luiz,0.1,16,17,a,
+221389,715,John Victor,Maciel Furtado,John,0.3,16,17,a,
+500151,716,Nicolò,Savona,Savona,0.0,16,17,a,
+560441,729,Luis Eduardo,Soares da Silva,Cuiabano,0.0,16,17,u,has joined Botafogo on loan for the rest of the season.
+476887,734,Dilane,Bakwa,Bakwa,0.0,16,17,i,Knock - Unknown return date
+232571,528,Anthony,Patterson,Patterson,0.2,17,56,a,
+74854,529,Simon,Moore,Moore,0.4,17,56,a,
+490000,530,Blondy,Nna Noukeu,Nna Noukeu,0.1,17,56,a,
+223827,531,Daniel,Ballard,Ballard,2.4,17,56,a,
+487676,532,Trai,Hume,Hume,0.4,17,56,a,
+220684,533,Aji,Alese,Alese,0.0,17,56,d,Shoulder injury - 50% chance of playing
+232820,534,Joe,Anderson,Anderson,0.4,17,56,a,
+461195,535,Dennis,Cirkin,Cirkin,0.0,17,56,d,Wrist Injury - 50% chance of playing
+477547,536,Leo Fuhr,Hjelde,Hjelde,0.0,17,56,d,Achilles injury - 50% chance of playing
+492066,537,Niall,Huggins,Huggins,0.1,17,56,u,has joined Wycombe Wanderers on loan for the rest of the season.
+514613,538,Zak,Johnson,Johnson,0.3,17,56,a,
+167512,539,Luke,O'Nien,O'Nien,0.0,17,56,a,
+465702,540,Timothée,Pembélé,Pembele,0.4,17,56,a,
+434399,541,Reinildo,Mandava,Reinildo,4.5,17,56,a,
+519634,542,Jenson,Seelt,Seelt,0.1,17,56,u,has joined Wolfsburg on loan for the rest of the season.
+535818,543,Simon,Adingra,Adingra,0.6,17,56,a,
+547027,544,Habib,Diarra,Diarra,0.0,17,56,i,Groin Injury - Expected back 03 Dec
+124165,545,Patrick,Roberts,Roberts,0.0,17,56,u,has joined Birmingham City on loan for the rest of the season.
+626844,546,Milan,Aleksić,Aleksić,0.0,17,56,u,has joined Cracovia on loan for the rest of the season.
+484420,547,Enzo,Le Fée,E.Le Fée,0.4,17,56,a,
+461199,548,Romaine,Mundle,Mundle,0.0,17,56,i,Hamstring injury - Expected back 22 Nov
+223336,549,Dan,Neil,Neil,0.0,17,56,a,
+215460,550,Ian,Poveda-Ocampo,Poveda,0.0,17,56,a,
+554197,551,Chris,Rigg,Rigg,0.0,17,56,a,
+577669,552,Noah,Sadiki,Sadiki,0.1,17,56,a,
+549912,553,Chemsdine,Talbi,Talbi,0.3,17,56,a,
+477851,554,Abdoullah,Ba,Ba,0.3,17,56,a,
+171422,555,Alan,Browne,Browne,0.0,17,56,u,has joined Middlesbrough on loan for the rest of the season.
+458297,556,Pierre,Ekwah Elimby,Ekwah,0.0,17,56,u,Has joined AS Saint-Etienne permanently.
+547410,557,Harrison,Jones,H.Jones,0.1,17,56,a,
+493837,558,Jay,Matete,Matete,0.2,17,56,a,
+500696,559,Nectarios,Triantis,Triantis,0.0,17,56,u,has joined Minnesota United permanently.
+437505,560,Wilson,Isidor,Isidor,3.6,17,56,a,
+564406,561,Eliezer,Mayenda Dossou,Mayenda,0.7,17,56,a,
+611975,562,Ahmed,Abdullahi,Abdullahi,0.4,17,56,a,
+551153,563,Luís Hemir,Silva Semedo,Luís Hemir,0.1,17,56,u,has joined Moreirense on loan for the rest of the season.
+440955,564,Nazarii,Rusyn,Rusyn,0.1,17,56,u,has joined Arka on loan for the rest of the season.
+84450,668,Granit,Xhaka,Xhaka,5.1,17,56,a,
+498016,670,Robin,Roefs,Roefs,6.7,17,56,a,
+105717,678,Arthur,Masuaku,Masuaku,0.8,17,56,a,
+201895,683,Omar,Alderete,Alderete,5.8,17,56,d,Head injury - 75% chance of playing
+200834,694,Nordi,Mukiele,Mukiele,5.3,17,56,a,
+247955,724,Lutsharel,Geertruida,Geertruida,0.0,17,56,a,
+441264,730,Brian,Brobbey,Brobbey,0.1,17,56,a,
+110504,735,Bertrand,Traoré,Traoré,0.0,17,56,a,
+184254,565,Guglielmo,Vicario,Vicario,10.3,18,6,a,
+214572,566,Brandon,Austin,Austin,0.3,18,6,a,
+485055,567,Antonín,Kinský,Kinsky,2.0,18,6,a,
+441164,568,Pedro,Porro Sauceda,Pedro Porro,19.0,18,6,a,
+221632,569,Cristian,Romero,Romero,4.4,18,6,a,
+135720,570,Kevin,Danso,Danso,0.2,18,6,a,
+115556,571,Ben,Davies,Davies,0.1,18,6,i,Hamstring injury - Unknown return date
+493125,572,Radu,Drăgușin,Dragusin,0.0,18,6,i,Knee injury - Unknown return date
+232859,573,Djed,Spence,Spence,1.7,18,6,a,
+487053,574,Destiny,Udogie,Udogie,0.4,18,6,a,
+491279,575,Micky,van de Ven,Van de Ven,32.2,18,6,a,
+548308,576,Ashley,Phillips,Phillips,0.0,18,6,u,Has joined Stoke City on loan for the rest of the season.
+553299,577,Takai,Kōta,Takai,0.1,18,6,i,Thigh injury - Expected back 23 Nov
+610799,578,Luka,Vušković,Vuskovic,0.4,18,6,u,has joined Hamburger SV on loan for the rest of the season.
+85971,579,Son,Heung-min,Son,0.1,18,6,u,Has joined Los Angeles FC permanently.
+242898,580,Brennan,Johnson,Johnson,3.3,18,6,a,
+172780,581,James,Maddison,Maddison,0.1,18,6,i,Anterior cruciate ligament - Unknown return date
+460842,582,Mohammed,Kudus,Kudus,32.0,18,6,a,
+445044,583,Dejan,Kulusevski,Kulusevski,0.0,18,6,i,Knee injury - Unknown return date
+511499,584,Mathys,Tel,Tel,0.1,18,6,a,
+202993,585,Rodrigo,Bentancur,Bentancur,0.4,18,6,a,
+570526,586,Lucas,Bergvall,Bergvall,0.4,18,6,a,
+227127,587,Yves,Bissouma,Bissouma,0.0,18,6,i,Ankle injury - Unknown return date
+550839,588,Wilson,Odobert,Odobert,0.0,18,6,a,
+235674,589,Manor,Solomon,Solomon,0.0,18,6,u,has joined Villarreal CF on loan for the rest of the season.
+436234,590,Bryan,Gil Salvatierra,Bryan,0.0,18,6,u,has joined Girona permanently.
+547701,591,Archie,Gray,Gray,0.1,18,6,i,Calf injury - Unknown return date
+499721,592,Mikey,Moore,Moore,0.0,18,6,u,Has joined Rangers on loan for the rest of the season.
+482442,593,Pape Matar,Sarr,P.M.Sarr,1.7,18,6,a,
+623095,594,Yang,Min-hyeok,Min-hyeok,0.0,18,6,u,Has joined Portsmouth on loan for the rest of the season.
+499726,595,Callum,Olusesi,Olusesi,0.2,18,6,a,
+154566,596,Dominic,Solanke-Mitchell,Solanke,1.0,18,6,i,Ankle injury - Expected back 23 Nov
+212319,597,Richarlison,de Andrade,Richarlison,9.4,18,6,a,
+552427,598,Will,Lankshear,Lankshear,0.0,18,6,u,Has joined Oxford United on loan for the rest of the season.
+490145,599,Dane,Scarlett,Scarlett,0.6,18,6,a,
+154296,673,João Maria,Lobo Alves Palhares Costa Palhinha Gonçalves,J.Palhinha,1.6,18,6,a,
+493362,717,Xavi,Simons,Xavi,1.7,18,6,a,
+247693,726,Randal,Kolo Muani,Kolo Muani,0.2,18,6,a,
+640419,745,Jun'ai,Byfield,Byfield,0.0,18,6,a,
+223434,149,Igor Julio,dos Santos de Paulo,Igor,0.1,19,21,a,
+84182,600,Alphonse,Areola,Areola,2.1,19,21,a,
+82143,601,Wes,Foderingham,Foderingham,0.3,19,21,u,has joined Aris Limassol permanently.
+483364,602,Krisztián,Hegyi,Hegyi,0.2,19,21,a,
+613804,603,El Hadji Malick,Diouf,Diouf,3.3,19,21,a,
+109533,604,Emerson,Palmieri dos Santos,Emerson,0.1,19,21,u,has joined Marseille permanently.
+214048,605,Maximilian,Kilman,Kilman,0.2,19,21,a,
+233963,606,Konstantinos,Mavropanos,Mavropanos,0.1,19,21,i,Muscle injury - Expected back 22 Nov
+210494,607,Nayef,Aguerd,N.Aguerd,0.0,19,21,u,has joined Marseille permanently.
+536109,608,Ollie,Scarles,Scarles,0.0,19,21,i,Shoulder injury - Expected back 27 Dec
+462116,609,Jean-Clair,Todibo,Todibo,0.1,19,21,a,
+214590,610,Aaron,Wan-Bissaka,Wan-Bissaka,5.9,19,21,a,
+518438,611,Kaelan,Casey,Casey,0.1,19,21,u,Has joined Swansea City on loan for the rest of the season.
+224024,612,Lucas,Tolentino Coelho de Lima,L.Paquetá,2.5,19,21,a,
+215439,613,Tomáš,Souček,Souček,0.2,19,21,a,
+101178,614,James,Ward-Prowse,Ward-Prowse,0.2,19,21,a,
+450070,615,Crysencio,Summerville,Summerville,0.1,19,21,a,
+213999,616,Edson,Álvarez Velázquez,Álvarez,0.1,19,21,u,Has joined Fenerbahçe on loan for the rest of the season.
+149519,617,Maxwel,Cornet,Cornet,0.0,19,21,u,has joined Genoa on loan for the rest of the season.
+197024,618,Guido,Rodríguez,G.Rodriguez,0.0,19,21,a,
+577114,619,Luis Guilherme,Lira dos Santos,L.Guilherme,0.0,19,21,a,
+490885,620,George,Earthy,Earthy,0.0,19,21,i,Hamstring injury - Expected back 22 Nov
+229384,621,Andy,Irving,Irving,0.3,19,21,a,
+518442,622,Lewis,Orford,Orford,0.1,19,21,u,has joined Stevenage on loan for the rest of the season.
+490142,623,Freddie,Potts,Potts,0.6,19,21,a,
+178186,624,Jarrod,Bowen,Bowen,8.0,19,21,a,
+91889,625,Niclas,Füllkrug,Füllkrug,0.7,19,21,i,Muscle injury - Expected back 22 Nov
+565431,626,Callum,Marshall,Marshall,0.7,19,21,a,
+158534,659,Kyle,Walker-Peters,Walker-Peters,0.3,19,21,a,
+75115,671,Callum,Wilson,Wilson,0.4,19,21,a,
+467189,679,Mads,Hermansen,Hermansen,0.2,19,21,a,
+551226,708,Mateus Gonçalo,Espanha Fernandes,M.Fernandes,0.0,19,21,a,
+564940,718,Soungoutou,Magassa,S.Magassa,0.0,19,21,a,
+37096,738,Lukasz,Fabianski,Fabianski,0.0,19,21,a,
+101982,627,Sam,Johnstone,Johnstone,0.2,20,39,a,
+149065,628,José,Malheiro de Sá,José Sá,1.2,20,39,a,
+79602,629,Daniel,Bentley,Bentley,0.6,20,39,a,
+516939,631,Emmanuel,Agbadou,Agbadou,0.2,20,39,a,
+87835,632,Matt,Doherty,Doherty,0.1,20,39,i,Knee injury - Unknown return date
+490721,633,Hugo,Bueno López,H.Bueno,0.1,20,39,a,
+501837,634,Yerson,Mosquera Valdelamar,Mosquera,0.1,20,39,a,
+483081,635,Rodrigo,Martins Gomes,R.Gomes,0.1,20,39,i,Groin Injury - Unknown return date
+231480,636,Santiago,Ignacio Bueno,S.Bueno,0.1,20,39,a,
+510362,637,Toti,Gomes,Toti,0.1,20,39,a,
+441271,638,Ki-Jana,Hoever,Hoever,1.0,20,39,a,
+560248,639,Bastien,Meupiyou Menadjou,Meupiyou,0.0,20,39,u,On loan to FC Alverca
+641221,640,Pedro,Cardoso de Lima,Pedro Lima,0.5,20,39,u,has joined Porto on loan for the rest of the season.
+517179,641,Alfie,Pond,Pond,1.4,20,39,a,
+184754,642,Hwang,Hee-chan,Hee Chan,0.1,20,39,a,
+509291,643,André,Trindade da Costa Neto,André,0.1,20,39,a,
+231057,644,Jean-Ricner,Bellegarde,Bellegarde,0.0,20,39,a,
+643135,645,Fer,López González,Fer López,0.0,20,39,a,
+448089,646,João Victor,Gomes da Silva,Gomes,0.1,20,39,a,
+181284,647,Gonçalo Manuel,Ganchinho Guedes,Guedes,0.0,20,39,u,Has joined Real Sociedad permanently.
+433312,648,Marshall,Munetsi,Munetsi,0.1,20,39,a,
+476502,649,Boubacar,Traoré,B.Traore,0.0,20,39,u,Has joined FC Metz on loan for the rest of the season.
+497606,650,Tawanda,Chirewa,Chirewa,0.3,20,39,a,
+596054,651,Tom,Edozie,Edozie,0.4,20,39,a,
+593001,652,Enso,González Medina,Gonzalez,1.5,20,39,a,
+240299,653,Joe,Hodge,Hodge,0.0,20,39,u,Signed by CD Tondela
+247412,654,Jørgen,Strand Larsen,Strand Larsen,1.3,20,39,a,
+449988,655,Fábio,Soares Silva,Fábio Silva,0.2,20,39,u,has joined Borussia Dortmund permanently.
+429414,656,Saša,Kalajdžić,Kalajdžić,0.1,20,39,u,has joined LASK on loan for the rest of the season.
+589507,657,Leon,Chiwome,Chiwome,0.0,20,39,i,Knee injury - Unknown return date
+531363,658,Nathan,Fraser,Fraser,1.9,20,39,a,
+230376,663,Jhon,Arias,J.Arias,0.2,20,39,a,
+497949,682,David,Møller Wolfe,Møller Wolfe,0.1,20,39,a,
+523705,695,Jackson,Tchatchoua,Tchatchoua,0.0,20,39,a,
+431248,709,Ladislav,Krejcí,Krejčí,0.1,20,39,a,
+488213,720,Tolu,Arokodare,Tolu,0.1,20,39,a,
