@@ -9,13 +9,13 @@ columns:
     type: integer
     description: Unique identifier for the player. Maps to id in players table.
   - name: expected_assists
-    type: integer
+    type: float
     description: Expected assists earned by the player.
   - name: expected_goals
-    type: integer
+    type: float
     description: Expected goals earned by the player.
   - name: expected_goals_conceded
-    type: integer
+    type: float
     description: Expected goals conceded by the player.
   - name: fixture
     type: integer
