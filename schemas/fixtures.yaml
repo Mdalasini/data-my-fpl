@@ -2,6 +2,9 @@ columns:
   - name: code
     type: integer
     description: The unique identifier of the fixture.
+  - name: id
+    type: integer
+    description: Unique season specific identifier for the fixture.
   - name: event
     type: integer
     description: The event (gameweek) the fixtures is played in.
