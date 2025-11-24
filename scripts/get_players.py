@@ -28,8 +28,13 @@ def main():
             "team_code",
             "status",
             "news",
+            "now_cost",
         ]
         df_filtered = df.select(columns_to_keep)
+        # original csv has price in 10s of millions of pounds
+        df_filtered = df_filtered.with_columns(
+            (pl.col("now_cost") / 10).alias("now_cost")
+        )
         data_dir_path.mkdir(parents=True, exist_ok=True)
         df_filtered.write_csv(save_path)
     else:

@@ -29,3 +29,6 @@ columns:
   - name: news
     type: string
     description: News about the player.
+  - name: now_cost
+    type: integer
+    description: The player's current cost in the Fantasy Premier League.
