@@ -33,19 +33,7 @@ def getTeamElo(team_id: int, elo_changes_df: pl.DataFrame) -> tuple[float, float
 
 
 def main():
-    fixtures_df = pl.read_csv(
-        fixture_path,
-        schema={
-            "code": pl.Int64,
-            "event": pl.Int64,
-            "finished": pl.Boolean,
-            "team_h": pl.Int64,
-            "team_a": pl.Int64,
-            "kickoff_time": pl.Datetime,
-            "team_h_xg": pl.Float64,
-            "team_a_xg": pl.Float64,
-        },
-    )
+    fixtures_df = pl.read_csv(fixture_path)
     elo_changes_df = pl.DataFrame(
         schema={
             "fixture_code": pl.Int64,
