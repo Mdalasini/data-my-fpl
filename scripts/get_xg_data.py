@@ -22,6 +22,7 @@ def extract_team_id_from_href(href: str) -> str:
 
 def create_fbref_to_fpl_mapping() -> dict:
     """Create a mapping from fbref team IDs to FPL team IDs"""
+    print("🗺️  Creating FBRef to FPL team mapping...")
     fbref_df = pl.read_csv(fbref_teams_path)
     teams_df = pl.read_csv(teams_path)
 
@@ -31,6 +32,7 @@ def create_fbref_to_fpl_mapping() -> dict:
         if len(fpl_team) > 0:
             mapping[fbref_id] = fpl_team["id"][0]
 
+    print(f"   Mapped {len(mapping)} teams successfully")
     return mapping
 
 
@@ -43,11 +45,16 @@ def scrape_fbref_fixtures() -> dict:
         "finished": bool
     }
     """
+    print("📄 Reading FBRef fixtures HTML...")
+
     if not fbref_fixtures_path.exists():
+        print(f"   ⚠️  HTML file not found: {fbref_fixtures_path}")
         return {}
 
     with open(fbref_fixtures_path, "r", encoding="utf-8") as f:
         html_content = f.read()
+
+    print(f"   Read {len(html_content):,} bytes")
 
     parser = HTMLParser(html_content)
 
@@ -59,26 +66,36 @@ def scrape_fbref_fixtures() -> dict:
     # Get all rows from the first tbody of the first table
     table = parser.css_first("table")
     if not table:
+        print("   ❌ No table found in HTML")
         return {}
 
     tbody = table.css_first("tbody")
     if not tbody:
+        print("   ❌ No tbody found in table")
         return {}
 
     rows = tbody.css("tr")
+    print(f"🔍 Parsing {len(rows)} fixture rows...")
+
+    parsed_count = 0
+    skipped_count = 0
+    with_xg_count = 0
 
     for row in rows:
         # Get home team ID
         home_team_td = row.css_first("[data-stat='home_team']")
         if not home_team_td:
+            skipped_count += 1
             continue
 
         home_team_a = home_team_td.css_first("a")
         if not home_team_a:
+            skipped_count += 1
             continue
 
         home_href = home_team_a.attributes.get("href", "")
         if not home_href:
+            skipped_count += 1
             continue
         fbref_home_id = extract_team_id_from_href(home_href)
         fpl_home_id = fbref_to_fpl.get(fbref_home_id)
@@ -86,14 +103,17 @@ def scrape_fbref_fixtures() -> dict:
         # Get away team ID
         away_team_td = row.css_first("[data-stat='away_team']")
         if not away_team_td:
+            skipped_count += 1
             continue
 
         away_team_a = away_team_td.css_first("a")
         if not away_team_a:
+            skipped_count += 1
             continue
 
         away_href = away_team_a.attributes.get("href", "")
         if not away_href:
+            skipped_count += 1
             continue
         fbref_away_id = extract_team_id_from_href(away_href)
         fpl_away_id = fbref_to_fpl.get(fbref_away_id)
@@ -122,6 +142,8 @@ def scrape_fbref_fixtures() -> dict:
 
         # If we have xG data for both teams, the fixture is finished
         finished = home_xg is not None and away_xg is not None
+        if finished:
+            with_xg_count += 1
 
         # Store the fixture data
         if fpl_home_id is not None and fpl_away_id is not None:
@@ -131,6 +153,11 @@ def scrape_fbref_fixtures() -> dict:
                 "team_a_xg": away_xg,
                 "finished": finished,
             }
+            parsed_count += 1
+
+    print(f"   ✅ Parsed {parsed_count} fixtures ({with_xg_count} with xG data)")
+    if skipped_count > 0:
+        print(f"   ⚠️  Skipped {skipped_count} rows (missing data)")
 
     return fixtures_data
 
@@ -151,21 +178,30 @@ def add_fixture_data(row, fbref_fixtures):
 
 
 def main():
+    print("⚽ Starting xG data enrichment...")
+    print("─" * 50)
+
     # Check if fixtures file exists
     if not fixtures_path.exists():
-        print(f"Error: Fixtures file not found at {fixtures_path}")
-        print("Please run get_fixtures.py first")
+        print(f"❌ Error: Fixtures file not found at {fixtures_path}")
+        print("   Please run get_fixtures.py first")
         return
 
     # Read existing fixtures
+    print(f"📂 Reading fixtures from {fixtures_path}...")
     df = pl.read_csv(fixtures_path)
+    print(f"   Loaded {len(df)} fixtures")
 
     # Scrape fixture data from fbref HTML
+    print("─" * 50)
     fbref_fixtures = scrape_fbref_fixtures()
 
     if not fbref_fixtures:
-        print("No fbref fixture data found. Skipping xG data enrichment.")
+        print("❌ No FBRef fixture data found. Skipping xG data enrichment.")
         return
+
+    print("─" * 50)
+    print("🔧 Enriching fixtures with xG data...")
 
     # Add finished and xG columns based on fbref data
     fixture_results = df.select(["team_h", "team_a"]).map_rows(
@@ -183,9 +219,19 @@ def main():
         fixture_results["team_a_xg"],
     )
 
+    # Count enriched fixtures
+    finished_count = df.filter(pl.col("finished") == True).height
+    with_xg_count = df.filter(pl.col("team_h_xg").is_not_null()).height
+
+    print(f"   📊 {finished_count} fixtures marked as finished")
+    print(f"   📊 {with_xg_count} fixtures have xG data")
+
     # Save the enriched fixtures
+    print(f"💾 Saving enriched fixtures to {fixtures_path}...")
     df.write_csv(fixtures_path)
-    print(f"Successfully enriched fixtures with xG data and saved to {fixtures_path}")
+
+    print("─" * 50)
+    print(f"✨ Done! Enriched {len(df)} fixtures with xG data")
 
 
 if __name__ == "__main__":

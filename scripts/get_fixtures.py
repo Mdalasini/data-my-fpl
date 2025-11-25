@@ -13,24 +13,38 @@ url = f"https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/refs/he
 
 
 def main():
-    response = requests.get(url)
-    if response.status_code == 200:
-        df = pl.read_csv(StringIO(response.text))
-        columns_to_keep = [
-            "code",
-            "id",
-            "event",
-            "team_h",
-            "team_a",
-            "kickoff_time",
-        ]
-        df_filtered = df.select(columns_to_keep)
+    print(f"🏟️  Fetching fixtures for season {season}...")
+    print(f"   URL: {url}")
 
-        data_dir_path.mkdir(parents=True, exist_ok=True)
-        df_filtered.write_csv(save_path)
-        print(f"Successfully fetched and saved fixtures to {save_path}")
-    else:
-        print("Error fetching data from GitHub")
+    response = requests.get(url)
+
+    if response.status_code != 200:
+        print(f"❌ Error fetching data from GitHub (HTTP {response.status_code})")
+        return
+
+    print("✅ Successfully fetched data from GitHub")
+
+    df = pl.read_csv(StringIO(response.text))
+    print(f"📊 Parsed {len(df)} fixtures from CSV")
+
+    columns_to_keep = [
+        "code",
+        "id",
+        "event",
+        "team_h",
+        "team_a",
+        "kickoff_time",
+    ]
+    df_filtered = df.select(columns_to_keep)
+    print(
+        f"🔧 Filtered to {len(columns_to_keep)} columns: {', '.join(columns_to_keep)}"
+    )
+
+    data_dir_path.mkdir(parents=True, exist_ok=True)
+    df_filtered.write_csv(save_path)
+
+    print(f"💾 Saved {len(df_filtered)} fixtures to {save_path}")
+    print("✨ Done!")
 
 
 if __name__ == "__main__":
