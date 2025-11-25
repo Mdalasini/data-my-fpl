@@ -19,7 +19,7 @@ columns:
     description: Expected goals conceded by the player.
   - name: fixture
     type: integer
-    description: Unique identifier for the fixture. Maps to id in fixtures table.
+    description: Unique identifier for the fixture. Maps to code in fixtures table.
   - name: minutes
     type: integer
     description: Minutes played by the player.

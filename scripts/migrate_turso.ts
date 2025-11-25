@@ -47,6 +47,7 @@ async function createTables() {
   await client.execute(`
     CREATE TABLE IF NOT EXISTS fixtures (
       code INTEGER PRIMARY KEY,
+      id INTEGER NOT NULL UNIQUE,
       event INTEGER NOT NULL,
       finished BOOLEAN NOT NULL,
       team_h INTEGER NOT NULL,
@@ -119,7 +120,7 @@ async function createTables() {
       ict_index REAL,
       PRIMARY KEY(element, fixture),
       FOREIGN KEY(element) REFERENCES players(id),
-      FOREIGN KEY(fixture) REFERENCES fixtures(id),
+      FOREIGN KEY(fixture) REFERENCES fixtures(code),
       FOREIGN KEY(opponent_team) REFERENCES teams(id)
     )
   `);
@@ -158,11 +159,12 @@ async function migrateFixtures(csvFile: string) {
 
     await client.execute({
       sql: `
-        INSERT INTO fixtures (code, event, finished, team_h, team_a, kickoff_time, team_h_xg, team_a_xg)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO fixtures (code, id, event, finished, team_h, team_a, kickoff_time, team_h_xg, team_a_xg)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
       `,
       args: [
         parseInt(row.code),
+        parseInt(row.id),
         parseInt(row.event),
         row.finished.toLowerCase() === "true" ? 1 : 0,
         parseInt(row.team_h),
