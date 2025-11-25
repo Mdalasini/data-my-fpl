@@ -20,18 +20,17 @@ def main():
             "code",
             "id",
             "event",
-            "finished",
             "team_h",
             "team_a",
             "kickoff_time",
-            "team_h_xg",
-            "team_a_xg",
         ]
         df_filtered = df.select(columns_to_keep)
+
         data_dir_path.mkdir(parents=True, exist_ok=True)
         df_filtered.write_csv(save_path)
+        print(f"Successfully fetched and saved fixtures to {save_path}")
     else:
-        print("Error fetching data")
+        print("Error fetching data from GitHub")
 
 
 if __name__ == "__main__":
