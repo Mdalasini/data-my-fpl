@@ -1,15 +1,26 @@
 # Fantasy Premier League Data
 
-This project enhances Fantasy Premier League data with advanced metrics to provide deeper insights into team performance.
+A comprehensive data pipeline for Fantasy Premier League that enriches official FPL data with advanced analytics including expected goals (xG) and ELO ratings. The project fetches data from multiple sources, processes it into structured formats, and provides enhanced metrics for better team and player performance analysis.
 
-## Data Source
+## Data Sources
 
-Data is sourced from [vaastav/Fantasy-Premier-League](https://github.com/vaastav/Fantasy-Premier-League), a comprehensive repository of FPL historical data.
+- **Official FPL data** via [vaastav/Fantasy-Premier-League](https://github.com/vaastav/Fantasy-Premier-League)
+- **Expected Goals data** from FBRef
+- **Team performance data** for ELO calculations
 
 ## Features
 
-### Expected Goals (xG)
-Incorporates expected goals data to measure shot quality and expected offensive output.
+- **Expected Goals (xG)**: Shot quality and expected offensive output metrics
+- **ELO Ratings**: Dynamic team strength ratings based on performance vs expectations
+- **Structured Data**: Clean, schema-validated datasets for analysis
+- **Automated Pipeline**: Scripts for data collection, processing, and migration
 
-### ELO Ratings
-Team strength is evaluated using ELO ratings, which dynamically adjust based on actual performance relative to expected performance.
+## Data Collection
+
+The `scripts/` directory contains automated scripts for:
+- Fetching player, team, and fixture data from FPL
+- Scraping xG data from FBRef
+- Calculating and updating ELO ratings
+- Data migration and processing
+
+Output data schemas are defined in the `schemas/` directory, providing clear structure for all generated datasets.
