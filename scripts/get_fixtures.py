@@ -1,49 +1,32 @@
-from io import StringIO
+import json
 from pathlib import Path
 
-import polars as pl
 import requests
 
 script_path = Path(__file__).parent
 data_dir_path = script_path / "../data"
-save_path = data_dir_path / "fixtures.csv"
+save_path = data_dir_path / "fixtures.json"
 
-season = "2025-26"
-url = f"https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/refs/heads/master/data/{season}/fixtures.csv"
+url = "https://fantasy.premierleague.com/api/fixtures/"
 
 
 def main():
-    print(f"🏟️  Fetching fixtures for season {season}...")
+    print("🏟️  Fetching fixtures...")
     print(f"   URL: {url}")
 
     response = requests.get(url)
 
     if response.status_code != 200:
-        print(f"❌ Error fetching data from GitHub (HTTP {response.status_code})")
+        print(f"❌ Error fetching data from API (HTTP {response.status_code})")
         return
 
-    print("✅ Successfully fetched data from GitHub")
+    print("✅ Successfully fetched data from API")
 
-    df = pl.read_csv(StringIO(response.text))
-    print(f"📊 Parsed {len(df)} fixtures from CSV")
+    save_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(save_path, "w") as f:
+        json.dump(response.json(), f, indent=4)
 
-    columns_to_keep = [
-        "code",
-        "id",
-        "event",
-        "team_h",
-        "team_a",
-        "kickoff_time",
-    ]
-    df_filtered = df.select(columns_to_keep)
-    print(
-        f"🔧 Filtered to {len(columns_to_keep)} columns: {', '.join(columns_to_keep)}"
-    )
-
-    data_dir_path.mkdir(parents=True, exist_ok=True)
-    df_filtered.write_csv(save_path)
-
-    print(f"💾 Saved {len(df_filtered)} fixtures to {save_path}")
+    print(f"💾 Saved {len(response.json())} fixtures to {save_path}")
     print("✨ Done!")
 
 
