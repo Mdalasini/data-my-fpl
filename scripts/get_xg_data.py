@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 import polars as pl
@@ -6,7 +7,7 @@ from selectolax.parser import HTMLParser
 script_path = Path(__file__).parent
 data_dir_path = script_path / "../data"
 html_dir_path = data_dir_path / "../html"
-fixtures_path = data_dir_path / "fixtures.csv"
+fixtures_path = data_dir_path / "fixtures.json"
 teams_path = data_dir_path / "teams.csv"
 fbref_teams_path = data_dir_path / "fbref_teams.csv"
 fbref_fixtures_path = html_dir_path / "fixtures.html"
@@ -41,8 +42,7 @@ def scrape_fbref_fixtures() -> dict:
     Scrape fixture data from fbref fixtures HTML file.
     Returns a dict mapping (fpl_home_id, fpl_away_id) to {
         "team_h_xg": float,
-        "team_a_xg": float,
-        "finished": bool
+        "team_a_xg": float
     }
     """
     print("📄 Reading FBRef fixtures HTML...")
@@ -140,19 +140,13 @@ def scrape_fbref_fixtures() -> dict:
                 except ValueError:
                     away_xg = None
 
-        # If we have xG data for both teams, the fixture is finished
-        finished = home_xg is not None and away_xg is not None
-        if finished:
+        if away_xg is not None and home_xg is not None:
             with_xg_count += 1
 
         # Store the fixture data
         if fpl_home_id is not None and fpl_away_id is not None:
             fixture_key = (fpl_home_id, fpl_away_id)
-            fixtures_data[fixture_key] = {
-                "team_h_xg": home_xg,
-                "team_a_xg": away_xg,
-                "finished": finished,
-            }
+            fixtures_data[fixture_key] = {"team_h_xg": home_xg, "team_a_xg": away_xg}
             parsed_count += 1
 
     print(f"   ✅ Parsed {parsed_count} fixtures ({with_xg_count} with xG data)")
@@ -162,19 +156,18 @@ def scrape_fbref_fixtures() -> dict:
     return fixtures_data
 
 
-def add_fixture_data(row, fbref_fixtures):
-    """Add xG and finished data from fbref to a fixture row"""
+def get_fixture_data(row, fbref_fixtures):
+    """Get xG data from fbref to a fixture row"""
     fixture_key = (row["team_h"], row["team_a"])
 
     if fixture_key in fbref_fixtures:
         fixture_info = fbref_fixtures[fixture_key]
         return (
-            fixture_info["finished"],
             fixture_info["team_h_xg"],
             fixture_info["team_a_xg"],
         )
     else:
-        return (False, None, None)
+        return (None, None)
 
 
 def main():
@@ -189,8 +182,8 @@ def main():
 
     # Read existing fixtures
     print(f"📂 Reading fixtures from {fixtures_path}...")
-    df = pl.read_csv(fixtures_path)
-    print(f"   Loaded {len(df)} fixtures")
+    fixtures_data = json.loads(Path(fixtures_path).read_text())
+    print(f"   Loaded {len(fixtures_data)} fixtures")
 
     # Scrape fixture data from fbref HTML
     print("─" * 50)
@@ -204,34 +197,25 @@ def main():
     print("🔧 Enriching fixtures with xG data...")
 
     # Add finished and xG columns based on fbref data
-    fixture_results = df.select(["team_h", "team_a"]).map_rows(
-        lambda row: add_fixture_data(
-            {"team_h": row[0], "team_a": row[1]}, fbref_fixtures
-        )
-    )
-
-    fixture_results.columns = ["finished", "team_h_xg", "team_a_xg"]
-
-    # Add the columns to the dataframe
-    df = df.with_columns(
-        fixture_results["finished"],
-        fixture_results["team_h_xg"],
-        fixture_results["team_a_xg"],
-    )
+    for fixture in fixtures_data:
+        extra = get_fixture_data(fixture, fbref_fixtures)
+        fixture.update({"team_h_xg": extra[0], "team_a_xg": extra[1]})
 
     # Count enriched fixtures
-    finished_count = df.filter(pl.col("finished") == True).height
-    with_xg_count = df.filter(pl.col("team_h_xg").is_not_null()).height
+    finished_count = sum(1 for item in fixtures_data if item.get("finished") is True)
+    with_xg_count = sum(
+        1 for item in fixtures_data if item.get("team_h_xg") is not None
+    )
 
     print(f"   📊 {finished_count} fixtures marked as finished")
     print(f"   📊 {with_xg_count} fixtures have xG data")
 
     # Save the enriched fixtures
     print(f"💾 Saving enriched fixtures to {fixtures_path}...")
-    df.write_csv(fixtures_path)
+    Path(fixtures_path).write_text(json.dumps(fixtures_data, indent=2))
 
     print("─" * 50)
-    print(f"✨ Done! Enriched {len(df)} fixtures with xG data")
+    print(f"✨ Done! Enriched {len(fixtures_data)} fixtures with xG data")
 
 
 if __name__ == "__main__":
