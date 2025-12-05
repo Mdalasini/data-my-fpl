@@ -21,3 +21,9 @@ node_modules/
 
 # Migration tracking
 .migration_hashes.json
+
+# scraping files
+html/
+
+# generated data
+data/
