@@ -1,7 +1,0 @@
-columns:
-  - name: id
-    type: string
-    description: The unique identifier for the team.
-  - name: short_name
-    type: string
-    description: The short name of the team. Maps to the short name in the teams table.
