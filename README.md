@@ -4,14 +4,14 @@ A comprehensive data pipeline for Fantasy Premier League that enriches official 
 
 ## Data Sources
 
-- **Official FPL data** via [vaastav/Fantasy-Premier-League](https://github.com/vaastav/Fantasy-Premier-League)
+- **Official FPL data** directly from `https://fantasy.premierleague.com/api`
 - **Expected Goals data** from FBRef
-- **Team performance data** for ELO calculations
+- **ELO ratings** directly from `https://www.versussportssimulator.com/PLS/rankings`
 
 ## Features
 
 - **Expected Goals (xG)**: Shot quality and expected offensive output metrics
-- **ELO Ratings**: Dynamic team strength ratings based on performance vs expectations
+- **ELO Ratings**: Team strength ratings sourced from Versus Sports Simulator
 - **Structured Data**: Clean, schema-validated datasets for analysis
 - **Automated Pipeline**: Scripts for data collection, processing, and migration
 
@@ -20,7 +20,7 @@ A comprehensive data pipeline for Fantasy Premier League that enriches official 
 The `scripts/` directory contains automated scripts for:
 - Fetching player, team, and fixture data from FPL
 - Scraping xG data from FBRef
-- Calculating and updating ELO ratings
+- Fetching ELO ratings from Versus Sports Simulator
 - Data migration and processing
 
-Output data schemas are defined in the `schemas/` directory, providing clear structure for all generated datasets.
+Output data schemas are defined in `scripts/type.ts` using Zod, providing clear structure and validation for all generated datasets.
