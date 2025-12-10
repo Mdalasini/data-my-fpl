@@ -1,0 +1,70 @@
+name: Update Team Rankings
+
+on:
+  schedule:
+    - cron: "0 0 */2 * *" # Every 2 days at midnight
+  workflow_dispatch:
+    # Allow manual triggering
+    inputs:
+      clear_cache:
+        description: "Clear cache before running"
+        required: false
+        default: false
+        type: boolean
+      no_cache:
+        description: "Skip cache (always fetch fresh data)"
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  update-rankings:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Cache rankings data
+        uses: actions/cache@v4
+        with:
+          path: .cache/
+          key: rankings-cache-${{ github.run_id }}
+          restore-keys: |
+            rankings-cache-
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build cache arguments
+        id: cache-args
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.clear_cache }}" = "true" ]; then
+            ARGS="$ARGS --clear-cache"
+          fi
+          if [ "${{ github.event.inputs.no_cache }}" = "true" ]; then
+            ARGS="$ARGS --no-cache"
+          fi
+          echo "args=$ARGS" >> $GITHUB_OUTPUT
+
+      - name: Update and upload rankings
+        env:
+          UPLOAD_RANKINGS_URL: ${{ secrets.UPLOAD_RANKINGS_URL }}
+        run: |
+          echo "Running with cache arguments: ${{ steps.cache-args.outputs.args }}"
+          bun scripts/upload-rankings.ts ${{ steps.cache-args.outputs.args }}
+        continue-on-error: false
+
+      - name: Upload cache artifacts (for debugging)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cache-files
+          path: .cache/
+          retention-days: 7
