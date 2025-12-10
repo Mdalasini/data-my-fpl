@@ -10,7 +10,7 @@ async function testExtractionOnly() {
       process.exit(1);
     }
 
-    const uploader = new RankingsUploader(url);
+    const uploader = new RankingsUploader(url, { useCache: true });
     const rankings = await uploader.extractOnly();
 
     console.log(

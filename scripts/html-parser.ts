@@ -1,20 +1,47 @@
 import * as cheerio from "cheerio";
 import { TeamRanking } from "./types";
 import { getTeamMapping } from "./constants";
+import { CacheManager } from "./cache";
 
 export class HtmlParser {
   private rankingsUrl: string;
-  private readonly CACHE_TTL_HOURS = 48;
+  private readonly DEFAULT_CACHE_TTL_HOURS = 48;
+  private cacheManager: CacheManager;
+  private useCache: boolean;
+  private cacheTtlHours: number;
 
   constructor(
     rankingsUrl: string = "https://www.versussportssimulator.com/PLS/rankings",
+    useCache: boolean = true,
+    cacheManager?: CacheManager,
+    cacheTtlHours?: number,
   ) {
     this.rankingsUrl = rankingsUrl;
+    this.useCache = useCache;
+    this.cacheManager = cacheManager || new CacheManager();
+    this.cacheTtlHours = cacheTtlHours !== undefined ? cacheTtlHours : this.DEFAULT_CACHE_TTL_HOURS;
   }
 
-  async fetchHtmlFromUrl(url?: string): Promise<string> {
+  async fetchHtmlFromUrl(url?: string, useCache?: boolean): Promise<string> {
     const targetUrl = url || this.rankingsUrl;
+    const shouldUseCache = useCache !== undefined ? useCache : this.useCache;
+    const cacheKey = "rankings-html";
 
+    // Try to use cache first
+    if (shouldUseCache && this.cacheManager.isCacheValid(cacheKey, this.cacheTtlHours)) {
+      try {
+        const cachedHtml = await this.cacheManager.getCachedHtml(cacheKey);
+        if (cachedHtml) {
+          console.log(`📦 Using cached HTML from: ${targetUrl}`);
+          console.log(`   Retrieved ${cachedHtml.length.toLocaleString()} bytes from cache`);
+          return cachedHtml;
+        }
+      } catch (error) {
+        console.warn(`⚠️  Warning: Failed to read from cache, fetching fresh data:`, error);
+      }
+    }
+
+    // Fetch fresh HTML
     try {
       console.log(`🌐 Fetching fresh HTML from: ${targetUrl}`);
 
@@ -38,6 +65,15 @@ export class HtmlParser {
 
       const htmlContent = await response.text();
       console.log(`   Fetched ${htmlContent.length.toLocaleString()} bytes`);
+
+      // Save to cache if caching is enabled
+      if (shouldUseCache) {
+        try {
+          await this.cacheManager.setCachedHtml(cacheKey, htmlContent, targetUrl);
+        } catch (error) {
+          console.warn(`⚠️  Warning: Failed to save to cache:`, error);
+        }
+      }
 
       return htmlContent;
     } catch (error) {

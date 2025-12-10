@@ -27,3 +27,6 @@ html/
 
 # generated data
 data/
+
+# Cache files
+.cache/
